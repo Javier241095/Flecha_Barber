@@ -69,9 +69,9 @@ iframe{
 /**IMAGEN DE FONDO**/
 header{
     width: 100vw;
-    height: calc(100vw * 535px / 535px);
-    max-height: 535px;
-    background: url(../banner/banner_movil_500px.jpg) no-repeat center center;
+    height: calc(100vw * 667px / 800px);
+    max-height: 667px;
+    background: url(../banner/banner_cell_tablet.jpg) no-repeat center center;
 }
 
 header > div{
@@ -204,7 +204,7 @@ header button, section button, aside input[type="submit"]{
 
 header button{
     max-width: 255px;
-    margin-top: 110px;
+    margin-top: 240px;
     background-color: #81664be3;
 }
 
