@@ -6,6 +6,7 @@
     font-family: 'Montserrat', 'Arial';
     color: #333;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .scrollNull{
