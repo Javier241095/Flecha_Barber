@@ -9,6 +9,11 @@
     scroll-behavior: smooth;
 }
 
+.animation{
+    transform: translateX(-100vh);
+    transition: 0.8s ease-in-out;
+}
+
 .scrollNull{
     overflow: hidden;
 }
@@ -233,8 +238,7 @@ header > div:nth-of-type(3) a{
     border: #f2f2f2 2px solid;
     border-radius: 20px;
     margin: auto;
-    display: flex;
-    justify-content: center;
+    display: block;
 }
 
 header > div:nth-of-type(3) a span{
@@ -245,6 +249,7 @@ header > div:nth-of-type(3) a span{
     border-radius: 30px;
     margin-top: 5px;
     position: relative;
+    left: 10px;
 }
 
 header > div:nth-of-type(3) a span::before{
@@ -257,7 +262,7 @@ header > div:nth-of-type(3) a span::before{
     border-top: 2px solid #F9C900;
     transform: translateY(-10px) rotate(135deg);
     left: -3px;
-    margin-top: 16px;
+    margin-top: 14px;
     opacity: 0;
     animation: ani 1.8s infinite linear;
 }
@@ -272,10 +277,11 @@ header > div:nth-of-type(3) a span::after{
     border-top: 2px solid #F9C900;
     transform: translateY(-10px) rotate(135deg);
     left: -3px;
-    margin-top: 16px;
+    margin-top: 14px;
     opacity: 0;
     animation: ani 1.8s infinite linear;
     animation-delay: 0.8s;
+    left: -3px;
 }
 
 @keyframes ani{
