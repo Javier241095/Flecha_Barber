@@ -50,7 +50,7 @@ p strong{
 section, aside{
     margin: 60px 0;
 }
-
+/*Imagen decorativa que aparace debajo de los H2*/
 section h2{
     padding-bottom: 1rem;
     background: url(../iconos/linea.png) no-repeat;
@@ -68,7 +68,22 @@ figure img{
 }
 
 iframe{
-    max-width: 100%;
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    border: none;
+}
+
+span{
+    display: inline-block;
+}
+
+/**Limitamos el ancho del contenido de las secciones a un maximo de 500px, esta medida es la difinitava para la adaptacion a distintos dispositivos. Tambien se aplica a los ASIDE atraves de las media @media screen**/
+body section:nth-of-type(1) article,
+body section:nth-of-type(2) figure figcaption div{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
 }
 
 /*///////////////HEADER//////////////*/
@@ -79,11 +94,10 @@ header{
     height: 667px;
     background: url(../banner/banner_cell_tablet.jpg) no-repeat center center;
 }
-
+/**HEADER > DIV**/
 header > div{
     padding-top: 1rem;
 }
-
 /**H1 LOGO**/
 header > div:nth-of-type(1) h1,
 footer h2{
@@ -94,7 +108,6 @@ footer h2{
     background-size: cover;
     font-size: 0;
 }
-
 /**ICONO HAMBURGUESA**/
 header > div:nth-of-type(1) nav > div{
     width: 24px;
@@ -104,7 +117,6 @@ header > div:nth-of-type(1) nav > div{
     right: 1rem;
     top: 1rem;
 }
-
 /**ICONO CERRAR MENU Y MODAL IMG**/
 header > div:nth-of-type(1) nav > .menuX,
 body section:nth-of-type(3) > div:nth-of-type(2) div{
@@ -116,7 +128,6 @@ body section:nth-of-type(3) > div:nth-of-type(2) div{
     top: 1rem ;
     z-index: 5;
 }
-
 /**MENU OCULTO**/
 header > div:nth-of-type(1) nav ul{
     width: 62vw;
@@ -130,7 +141,8 @@ header > div:nth-of-type(1) nav ul{
     transition: 0.3s ease-out;
     z-index: 2;
 }
-
+/**HEADER > DIV[1] > DIV**/
+/*Este div es el fondo negro que cubre todo el viewport cuando se abre el menu hamburguesa*/
 header > div:nth-of-type(1) > div{
     width: 100vw;
     height: 100vh;
@@ -140,24 +152,20 @@ header > div:nth-of-type(1) > div{
     background-color: #2a2a2a82;
     z-index: 1;
 }
-
 /**MENU VISIBLE**/
 header > div:nth-of-type(1) nav .menuActive,
 header > div:nth-of-type(1) .menuActive
 {
     transform: translateX(0%);
 }
-
 /**ESTILOS DEL UL LI A**/
 header > div:nth-of-type(1) nav ul li{
     margin-bottom: .125rem;
 }
-
 header > div:nth-of-type(1) nav ul li a{
     padding: 0 0 1rem 1.25rem;
     color: #baa472;
 }
-
 /**ESTILOS DEL DIV H2 BARBERIA**/
 header > div:nth-of-type(2) h2{
     margin-top: 3rem;
@@ -167,7 +175,6 @@ header > div:nth-of-type(2) h2{
     text-align: center;
     color: #F9C900;
 }
-
 /**ESTILOS DEL DIV H3 MARCA TU ESTILO**/
 header > div:nth-of-type(2) h3,
 footer h3{
@@ -183,8 +190,7 @@ footer h3{
     border-top: 2px solid #f2f2f2;
     border-bottom: 2px solid #f2f2f2;
 }
-
-/**ESTILOS DEL BOTON**/
+/**ESTILOS DEL BOTON RESERVAR TURNO**/
 header button, section button, aside input[type="submit"]{
     width: 100%;
     display: block;
@@ -198,13 +204,12 @@ header button, section button, aside input[type="submit"]{
     border-radius: 10px;
     box-shadow: -2px 3px 6px -2px rgb(0 0 0 / 10%);
 }
-
+/*Dimesiones para hacer mas chico el boton que esta en HEADER*/
 header button{
     max-width: 255px;
     margin-top: 100px;
     background-color: #81664be3;
 }
-
 /**ESTILOS DEL UL DIA Y HORARIO**/
 header > ul{
    margin-top: 76px;
@@ -226,7 +231,6 @@ header > ul li a{
     color: #f2f2f2;
     /*color: #baa472;*/
 }
-
 /**ESTILOS DEL INDICADOR DE SCROLL**/
 header > div:nth-of-type(3){
     padding-top: 60px;
@@ -302,6 +306,7 @@ header > div:nth-of-type(3) a span::after{
 /*///////////////SOBRE NOSOTROS//////////////*/
 body section:nth-of-type(1){
     padding: 0 32px;
+    margin-bottom: 44px;
 }
 /**FONDO DE COLOR IMG**/
 body section:nth-of-type(1) figure{
@@ -312,26 +317,30 @@ body section:nth-of-type(1) figure{
 }
 
 /*///////////////NUESTROS SERVICIOS//////////////*/
+body section:nth-of-type(2){
+    margin-top: 44px;
+}
+
 body section:nth-of-type(2) figure img{
     padding: 0 32px;
 }
 
 body section:nth-of-type(2) figure figcaption {
-    margin-top: 40px;
+    margin-top: 66px;
     background-color: #f2f2f2;
-    padding: 20px 32px;
+    padding: 20px 32px 30px 32px;
 }
 
 /**POSICION DE LA IMG DEL H2**/
-body section:nth-of-type(2) figure figcaption h2{
+body section:nth-of-type(2) figure figcaption div h2{
     background-position: 21px 34px;
 }
 /**ESTILO DE LA LISTA DE PRECIOS**/
-body section:nth-of-type(2) figure figcaption ul{
+body section:nth-of-type(2) figure figcaption div ul{
     margin: 20px 0;
 }
 
-body section:nth-of-type(2) figure figcaption ul li{
+body section:nth-of-type(2) figure figcaption div ul li{
     display: flex;
     justify-content: space-between;
     font-weight: 600;
@@ -439,6 +448,15 @@ body section:nth-of-type(3) > div:nth-of-type(2) ul:nth-of-type(2) .active{
 body aside:nth-of-type(1){
     margin-bottom: 0;
 }
+
+@media screen and (min-width: 800px){
+    body aside:nth-of-type(1){
+        display: grid;
+        grid-template-columns: 360px 440px;
+        justify-content: center;
+    }
+}
+
 /**ASIDE CONTACTO DIV**/
 body aside:nth-of-type(1) div{
     background-color: #2A2A2A;
@@ -472,6 +490,7 @@ body aside:nth-of-type(1) div ul li:first-child span{
     border-radius: 50%;
     
 }
+
 /**ASIDE CONTACTO DIV UL LI SPAN(CALENDARIO)**/
 body aside:nth-of-type(1) div ul li:nth-of-type(2) span{
     width: 14px;
@@ -505,6 +524,15 @@ body aside:nth-of-type(1) div ul li a{
 body aside:nth-of-type(2){
     padding: 0 32px;
 }
+
+@media screen and (min-width: 564px){
+    body aside:nth-of-type(2){
+        max-width: 500px;
+        margin: 60px auto;
+        padding: 0;
+    }
+}
+
 /**ASIDE RESERVA H2**/
 body aside:nth-of-type(2) h2{
     max-width: 209px;
@@ -514,7 +542,26 @@ body aside:nth-of-type(2) h2{
     background: url(../iconos/linea.png) no-repeat center center;
     background-position: 0 34px;
 }
-/**ASIDE RESERVA DIV**/
+body aside:nth-of-type(2) > div{
+    padding: 1rem;
+    background-color: #fdd579;
+    border-radius: 10px;
+}
+/**ASIDE RESERVA UL LI**/
+body aside:nth-of-type(2) > div > ul li{
+    margin-top: 8px;
+    line-height: 1.4rem;
+}
+/**ASIDE RESERVA UL LI**/
+body aside:nth-of-type(2) > div > ul li a{
+    display: inline;
+    color: #333;
+}
+/**ASIDE RESERVA FORM DIV**/
+body aside:nth-of-type(2) form{
+    margin-top: 40px;
+}
+/**ASIDE RESERVA FORM DIV**/
 body aside:nth-of-type(2) form div{
     margin-bottom: 18px;
 }
@@ -583,6 +630,9 @@ body aside:nth-of-type(2) form > div > .HsActivo{
 }
 /**ASIDE RESERVA FORM > DIV[4] > UL LI**/
 body aside:nth-of-type(2) form > div > ul li{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #BAA472;
@@ -590,9 +640,17 @@ body aside:nth-of-type(2) form > div > ul li{
     text-align: center;
     font-weight: 500;
     box-shadow: -2px 3px 6px -2px rgb(0 0 0 / 10%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body aside:nth-of-type(2) form > div > ul li span{
+    width: 26px;
+    height: 16px;
     background: url(../iconos/reloj.png) no-repeat;
     background-size: 1rem;
-    background-position: 108px center;
+    background-position-x: 10px;
 }
 
 /**Estas class se aplican atraves del JS para darle estilos a los INPUTS, LABEL y los P tanto para estilizarlos como para las validaciones**/
@@ -634,6 +692,7 @@ footer h2{
     margin-bottom: 1rem;
 }
 
+
 footer div h3{
     max-width: 200px;
     margin-top: 10px;
@@ -673,7 +732,6 @@ footer div ul li:nth-of-type(2) a{
 footer div ul li:last-child a{
     width: 14px;
     height: 14px;
-    margin-right: 1rem;
     padding: 14px;
     background: url(../iconos/whatsapp_f.png) no-repeat center center;
     background-size: 14px;
@@ -690,4 +748,23 @@ footer p{
     background-size: 18px;
     background-position: 0 1px;
     color: #666;
+}
+
+@media screen and (min-width: 800px){
+    footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer h2{
+        margin: 0;
+    }
+
+    footer div h3 {
+        margin-top: 0;
+    }
+
+    footer div ul{
+        margin: 20px 0 0 0;
+    }
 }

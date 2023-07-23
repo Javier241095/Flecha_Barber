@@ -92,4 +92,7 @@ for(let hs of Horarios){
     let li = d.createElement('li');
     li.innerHTML =  `${hs.hora}`;
     ul.appendChild(li);
+
+    let span = d.createElement('span');
+    li.appendChild(span)
 }
