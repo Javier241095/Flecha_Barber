@@ -9,6 +9,10 @@
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: #f2f2f2;
+}
+
 .animation{
     transform: translateX(-100vh);
     transition: 0.8s ease-in-out;
@@ -74,7 +78,7 @@ span{
     display: inline-block;
 }
 
-/**Limitamos el ancho del contenido de las secciones a un maximo de 500px, esta medida es la difinitava para la adaptacion a distintos dispositivos. Tambien se aplica a los ASIDE atraves de las media @media screen**/
+/**Limitamos el ancho del contenido de las secciones a un maximo de 500px, esta medida es la difinitava para la adaptacion a distintos dispositivos moviles. Tambien se aplica a los ASIDE atraves de las media @media screen**/
 body section:nth-of-type(1) article,
 body section:nth-of-type(2) figure figcaption div{
     width: 100%;
@@ -323,8 +327,9 @@ body section:nth-of-type(2) figure img{
 
 body section:nth-of-type(2) figure figcaption {
     margin-top: 66px;
-    background-color: #f2f2f2;
+    background-color: #fff;
     padding: 20px 32px 30px 32px;
+    box-shadow: -2px 3px 6px -2px rgb(0 0 0 / 10%);
 }
 
 /**POSICION DE LA IMG DEL H2**/
@@ -361,6 +366,10 @@ body section:nth-of-type(3) > div:nth-of-type(1){
     grid-template-columns: repeat(2, 160px);
     justify-content: center;
     grid-gap: 10px;
+}
+/**ESTILO DE LA ULTIMA IMG CENTRADA AL MEDIO**/
+body section:nth-of-type(3) > div:nth-of-type(1) figure img{
+    filter: grayscale(85%);
 }
 /**ESTILO DE LA ULTIMA IMG CENTRADA AL MEDIO**/
 body section:nth-of-type(3) > div:nth-of-type(1) figure:nth-of-type(5){
@@ -431,7 +440,7 @@ body section:nth-of-type(3) > div:nth-of-type(2) ul:last-child li{
     width: 10px;
     height: 10px;
     margin: 0 5px;
-    background-color: #f2f2f2;
+    background-color: #fff;
     border-radius: 50%;
 }
 /**ESTILO DEL LI INDICADOR ACTIVO**/
@@ -744,11 +753,49 @@ footer p span{
     color: #666;
 }
 
-@media screen and (min-width: 564px){
+@media screen and (min-width: 450px){
+    /**H1 LOGO**/
+    header > div:nth-of-type(1) h1,
+    footer h2{
+        margin-left: 2rem;
+    }
+    /**ICONO HAMBURGUESA**/
+    header > div:nth-of-type(1) nav > div{
+        right: 2rem;
+    }
+    /**ICONO CERRAR MENU Y MODAL IMG**/
+    header > div:nth-of-type(1) nav > .menuX,
+    body section:nth-of-type(3) > div:nth-of-type(2) div{
+        right: 2rem;
+    }
+}
+
+@media screen and (min-width: 550px){
+    /*///////////////GALERIA//////////////*/
+    /**ESTILO DE LAS IMG MINIATURA**/
+    body section:nth-of-type(3) > div:nth-of-type(1){
+        grid-template-columns: repeat(2, 238px);
+    }
+    
+    /*///////////////RESERVAR TURNO//////////////*/
+    /**ASIDE ID RESERVA**/
+    body aside:nth-of-type(2){
+        max-width: 486px;
+        margin: 60px auto;
+    }
+}
+
+@media screen and (min-width: 551px){
+    /*///////////////GALERIA//////////////*/
+    /**ESTILO DE LAS IMG MINIATURA**/
+    body section:nth-of-type(3) > div:nth-of-type(1){
+        grid-template-columns: repeat(2, 245px);
+    }
+    
+    /*///////////////RESERVAR TURNO//////////////*/
+    /**ASIDE ID RESERVA**/
     body aside:nth-of-type(2){
         max-width: 500px;
-        margin: 60px auto;
-        padding: 0;
     }
 }
 
@@ -777,7 +824,7 @@ footer p span{
     }
 }
 
-@media screen and (min-width: 801px){
+@media screen and (min-width: 901px){
     /*///////////////HEADER//////////////*/
     /**IMAGEN DE FONDO**/
     header{
@@ -828,11 +875,13 @@ footer p span{
         margin-bottom: 0;
     }
     header > div:nth-of-type(1) nav ul li a{
-        padding: 5px 1rem;
+        padding: 8px 1rem;
         color: #f2f2f2;
+        font-size: .875rem;
     }
 
     header > div:nth-of-type(1) nav ul li:last-child a{
+        padding: 4px 1rem;
         border: 2px solid #baa472;
         border-radius: 10px;
     }
@@ -881,5 +930,44 @@ footer p span{
     /**ESTILOS DEL INDICADOR DE SCROLL**/
     header > div:nth-of-type(3) a{
         display: none;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    body section:nth-of-type(1) article,
+    body section:nth-of-type(2) figure figcaption div{
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    /*///////////////SOBRE NOSOTROS//////////////*/
+    body section:nth-of-type(1) article{
+        display: grid;
+        grid-template-columns: 410px 450px;
+        align-items: center;
+    }
+    /**FONDO DE COLOR IMG**/
+    body section:nth-of-type(1) figure{
+        max-width: 360px;
+        padding: 16px;
+        margin: 0 60px 0 32px;
+        background-color: #666;
+    }
+
+    /*///////////////NUESTROS SERVICIOS//////////////*/
+    body section:nth-of-type(2) figure{
+        display: grid;
+        grid-template-columns: 475px 400px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body section:nth-of-type(2) figure img{
+        padding: 0 40px 0 0;
+    }
+
+    body section:nth-of-type(2) figure figcaption {
+        box-shadow: -2px 3px 6px -2px rgb(0 0 0 / 10%);
     }
 }
