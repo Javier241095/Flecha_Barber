@@ -58,12 +58,11 @@ function ValidarEmail(){
 
 function Selected(){
     let h3 = d.querySelector('aside form div h3');
-    
+
     h4.classList.remove("errorInput");
     h3.classList.remove("errorLabel");
     msj[3].innerHTML = '';
-
-    if (h4.innerHTML == 'Horarios disponibles') {
+    if (horario.value == '') {
         h4.classList.add("errorInput");
         h3.classList.add("errorLabel");
         msj[3].innerHTML = 'Debe seleccionar un horario';

@@ -13,11 +13,11 @@ function EnviarReserva(){
                 Nombre: nombre.value.trim(),
                 Apellido: apellido.value.trim(),
                 Email: email.value.trim(),
-                Horario: h4.innerHTML,
+                Horario: horario.value,
             }
         )
         for(let hs of Horarios){
-            if(hs.hora == h4.innerHTML){
+            if(hs.hora == horario.value){
                 //hs.reservado = true;
                 Horarios.splice(h4.innerHTML, 1)
             }

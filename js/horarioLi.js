@@ -29,7 +29,8 @@ ul.addEventListener('click', (e)=> {
         divHs.classList.remove('HsActivo')
         ul.classList.remove('HsActivo')
         body.classList.remove('scrollNull')
-        h4.innerHTML = e.target.innerHTML
+        h4.innerHTML = e.target.innerHTML;
+        horario.value = e.target.innerText;
     }    
 })
 

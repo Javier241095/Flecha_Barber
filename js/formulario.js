@@ -9,6 +9,7 @@ formulario.onsubmit = function(){
 
     Selected();
 
+     
     EnviarReserva();
    
     return enviar;
