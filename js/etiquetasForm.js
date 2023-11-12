@@ -7,4 +7,3 @@ let ul = d.querySelector('aside form div ul')
 let label = d.querySelectorAll('aside form div label');
 let msj = d.querySelectorAll('aside form div p');
 let formulario = d.querySelector('form');
-

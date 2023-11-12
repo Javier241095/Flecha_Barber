@@ -87,13 +87,12 @@ header{
     height: 667px;
     background: url(../img/banner/banner_cell_tablet.jpg) no-repeat center center;
     margin-bottom: 3.75rem; /*60px*/
-    /*height: calc(100vw * 667 / 800);*/
-    /*max-width: 800px;*/
-    /*background-size: cover;*/
 }
+
 .movil{
     width: calc(100vw - 17px);
 }
+
 /**HEADER > DIV**/
 header > div{
     padding-top: 1rem;
@@ -111,144 +110,77 @@ footer h2{
 
 
 /*************************************/
-/**ICONO HAMBURGUESA**/
-header > div:nth-of-type(1) nav > div{
-    width: 24px;
-    height: 24px;
-    background: url(../img//iconos/menu.png) no-repeat center center;
-    position: absolute;
-    right: 1rem;
-    top: 1.6rem;
-}
-/**ICONO CERRAR MENU Y MODAL IMG**/
-header > div:nth-of-type(1) nav > .menuX,
-body section:nth-of-type(3) > div:nth-of-type(2) div{
-    width: 24px;
-    height: 24px;
-    background: url(../img/iconos/letra_x.png) no-repeat center center;
-    position: fixed;
-    right: 1rem;
-    top: 1.6rem;
-    z-index: 3;
-}
-/**MENU OCULTO**/
-header > div:nth-of-type(1) nav ul{
-    width: 62vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding-top: 3rem;
-    background-color: #2A2A2A;
-    transform: translateX(100%);
-    transition: 0.3s ease-out;
-    z-index: 2;
-}
-/**MENU VISIBLE**/
-header > div:nth-of-type(1) nav .menuActive,
-header > div:nth-of-type(1) .menuActive
-{
-    transform: translateX(0%);
-}
-/**ESTILOS DEL UL LI A**/
-header > div:nth-of-type(1) nav ul li{
-    margin-bottom: .125rem;
-}
-header > div:nth-of-type(1) nav ul li a{
-    padding: 0 0 1.4rem 1.25rem;
-    color: #baa472;
-}
-/**HEADER > DIV[1] > DIV**/
-/*Este div es el fondo negro que cubre todo el viewport cuando se abre el menu hamburguesa*/
-header > div:nth-of-type(1) > div{
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    transform: translateX(-100%);
-    background-color: #2a2a2a82;
-    z-index: 1;
-}
-/*Dimesiones para hacer mas chico el boton que esta en HEADER*/
-header button{
-    max-width: 255px;
-    margin-top: 100px;
-    background-color: #81664be3;
-}
-/**ESTILOS DEL INDICADOR DE SCROLL**/
-.animation{
-    transform: translateX(-100vh);
-    transition: 0.8s ease-in-out;
-}
-header > div:nth-of-type(3){
-    padding-top: 50px;
-}
-
-header > div:nth-of-type(3) a{
-    width: 28px;
-    height: 44px;
-    border: #f2f2f2 2px solid;
-    border-radius: 20px;
-    margin: auto;
-    display: block;
-}
-
-header > div:nth-of-type(3) a span{
-    display: inline-block;
-    background-color: #F9C900;
-    width: 4px;
-    height: 7px;
-    border-radius: 30px;
-    margin-top: 5px;
-    position: relative;
-    left: 10px;
-}
-
-header > div:nth-of-type(3) a span::before{
-    position: absolute;
-    content: '';
-    width: 8px;
-    height: 8px;
-    border: none;
-    border-right: 2px solid #F9C900;
-    border-top: 2px solid #F9C900;
-    transform: translateY(-10px) rotate(135deg);
-    left: -3px;
-    margin-top: 14px;
-    opacity: 0;
-    animation: ani 1.8s infinite linear;
-}
-
-header > div:nth-of-type(3) a span::after{
-    position: absolute;
-    content: '';
-    width: 8px;
-    height: 8px;
-    border: none;
-    border-right: 2px solid #F9C900;
-    border-top: 2px solid #F9C900;
-    transform: translateY(-10px) rotate(135deg);
-    left: -3px;
-    margin-top: 14px;
-    opacity: 0;
-    animation: ani 1.8s infinite linear;
-    animation-delay: 0.8s;
-    left: -3px;
-}
-
-@keyframes ani{
-    0%{
-        margin-top: 16px;
-        opacity: 0;
+@media screen and (max-width: 900px){
+    /**ICONO HAMBURGUESA**/
+    header > div:nth-of-type(1) nav > div{
+        width: 24px;
+        height: 24px;
+        background: url(../img//iconos/menu.png) no-repeat center center;
+        position: absolute;
+        right: 1rem;
+        top: 1.6rem;
     }
-    50%{
-        margin-top: 22px;
-        opacity: 1;
+    /**ICONO CERRAR MENU Y MODAL IMG**/
+    header > div:nth-of-type(1) nav > .menuX,
+    body section:nth-of-type(3) > div:nth-of-type(2) div{
+        width: 24px;
+        height: 24px;
+        background: url(../img/iconos/letra_x.png) no-repeat center center;
+        position: fixed;
+        right: 1rem;
+        top: 1.6rem;
+        z-index: 3;
     }
-    100%{
-        margin-top: 30px;
-        opacity: 0;
+    /**MENU OCULTO**/
+    header > div:nth-of-type(1) nav ul{
+        width: 62vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding-top: 3rem;
+        background-color: #2A2A2A;
+        transform: translateX(100%);
+        transition: 0.3s ease-out;
+        z-index: 2;
     }
+    /**MENU VISIBLE**/
+    header > div:nth-of-type(1) nav .menuActive,
+    header > div:nth-of-type(1) .menuActive
+    {
+        transform: translateX(0%);
+    }
+    /**ESTILOS DEL UL LI A**/
+    header > div:nth-of-type(1) nav ul li{
+        margin-bottom: .125rem;
+    }
+    header > div:nth-of-type(1) nav ul li a{
+        padding: 0 0 1.4rem 1.25rem;
+        color: #baa472;
+    }
+    /**HEADER > DIV[1] > DIV**/
+    /*Este div es el fondo negro que cubre todo el viewport cuando se abre el menu hamburguesa*/
+    header > div:nth-of-type(1) > div{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        transform: translateX(-100%);
+        background-color: #2a2a2a82;
+        z-index: 1;
+    }
+    /*Dimesiones para hacer mas chico el boton que esta en HEADER*/
+    header button{
+        max-width: 255px;
+        margin-top: 100px;
+        background-color: #81664be3;
+    }
+
+    
+/*
+    header button{
+        display: none;
+    }*/
 }
 /*************************************/
 
@@ -300,10 +232,13 @@ header > ul{
      /*color: #baa472;*/
  }
 
+ section{
+    padding: 0 1rem;
+ }
+
 
  /*///////////////SOBRE NOSOTROS//////////////*/
  body section:nth-of-type(1){
-    padding: 0 32px;
     margin-bottom: 44px;
 }
 /**FONDO DE COLOR IMG**/
@@ -326,7 +261,8 @@ body section:nth-of-type(2) figure img{
 body section:nth-of-type(2) figure figcaption {
     margin-top: 3.75rem; /*60px*/
     background-color: #f2f2f2;
-    padding: 20px 32px 30px 32px;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 /**POSICION DE LA IMG DEL H2**/
@@ -742,4 +678,101 @@ footer div + p{
 /**FOOTER DID UL LI P(SPAN)**/
 footer p span{
     color: #666;
+}
+
+/*///////////////MAEDIA QUERIS//////////////*/
+
+/*Esta MEDIA QUERI sirve para dejar de mostra el boton de SCROLL que esa en el header*/
+@media screen and (max-width: 800px){
+    /**ESTILOS DEL INDICADOR DE SCROLL**/
+    .animation{
+        transform: translateX(-100vh);
+        transition: 0.8s ease-in-out;
+    }
+    header > div:nth-of-type(3){
+        padding-top: 50px;
+    }
+
+    header > div:nth-of-type(3) a{
+        width: 28px;
+        height: 44px;
+        border: #f2f2f2 2px solid;
+        border-radius: 20px;
+        margin: auto;
+        display: block;
+    }
+
+    header > div:nth-of-type(3) a span{
+        display: inline-block;
+        background-color: #F9C900;
+        width: 4px;
+        height: 7px;
+        border-radius: 30px;
+        margin-top: 5px;
+        position: relative;
+        left: 10px;
+    }
+
+    header > div:nth-of-type(3) a span::before{
+        position: absolute;
+        content: '';
+        width: 8px;
+        height: 8px;
+        border: none;
+        border-right: 2px solid #F9C900;
+        border-top: 2px solid #F9C900;
+        transform: translateY(-10px) rotate(135deg);
+        left: -3px;
+        margin-top: 14px;
+        opacity: 0;
+        animation: ani 1.8s infinite linear;
+    }
+
+    header > div:nth-of-type(3) a span::after{
+        position: absolute;
+        content: '';
+        width: 8px;
+        height: 8px;
+        border: none;
+        border-right: 2px solid #F9C900;
+        border-top: 2px solid #F9C900;
+        transform: translateY(-10px) rotate(135deg);
+        left: -3px;
+        margin-top: 14px;
+        opacity: 0;
+        animation: ani 1.8s infinite linear;
+        animation-delay: 0.8s;
+        left: -3px;
+    }
+
+    @keyframes ani{
+        0%{
+            margin-top: 16px;
+            opacity: 0;
+        }
+        50%{
+            margin-top: 22px;
+            opacity: 1;
+        }
+        100%{
+            margin-top: 30px;
+            opacity: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 801px){
+    /*///////////////HEADER//////////////*/
+    /**IMAGEN DE FONDO**/
+    header{
+        /*Solo se modifico la imagen de fondo y el alto*/
+        height: 550px;
+        background: url(../img/banner/banner_tablet_pc.jpg) no-repeat center center;
+    }
+    /**ESTILOS DEL UL DIA Y HORARIO**/
+    header > ul{
+        margin-top: 76px;
+        text-align: center;
+        display: flex;
+    }
 }
