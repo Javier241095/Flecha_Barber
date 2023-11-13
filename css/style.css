@@ -678,8 +678,6 @@ footer p span{
 
 /*///////////////MAEDIA QUERIS//////////////*/
 @media screen and (min-width: 500px){
-    
-
     /**ICONO HAMBURGUESA**/
     header > div:nth-of-type(1) nav > div{
         right: 2rem;
@@ -692,13 +690,27 @@ footer p span{
 
     /*///////////////SOBRE NOSOTROS//////////////*/
     body section:nth-of-type(1){
-        max-width: 500px;
         padding: 0 2rem;
     }
+    body section:nth-of-type(1) article{
+        display: grid;
+        grid-template-columns: 210px 500px;
+        grid-column-gap: 40px;
+    }
+    /**FONDO DE COLOR IMG**/
+    body section:nth-of-type(1) figure{
+        margin-bottom: 0;
+        line-height: 0px;
+    }
+
 
     /*///////////////NUESTROS SERVICIOS//////////////*/
     body section:nth-of-type(2) figure figcaption{
         padding: 20px 2rem 30px 2rem;
+    }
+    body section:nth-of-type(2) figure figcaption div{
+        max-width: 500px;
+        margin: auto;
     }
 
     /*///////////////CONTACTO//////////////*/
@@ -711,6 +723,9 @@ footer p span{
     /**ASIDE ID RESERVA**/
     body aside:nth-of-type(2){
         padding: 0 2rem;
+        max-width: 500px;
+        margin: auto;
+        margin-top: 3.75rem;
     }
 }
 
