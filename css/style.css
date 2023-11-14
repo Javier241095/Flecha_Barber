@@ -44,7 +44,6 @@ h2{
 
 iframe{
     width: 100%;
-    max-width: 800px;
     height: 350px;
     border: none;
 }
@@ -107,83 +106,6 @@ footer h2{
     background-size: cover;
     font-size: 0;
 }
-
-
-/*************************************/
-@media screen and (max-width: 900px){
-    /**ICONO HAMBURGUESA**/
-    header > div:nth-of-type(1) nav > div{
-        width: 24px;
-        height: 24px;
-        background: url(../img//iconos/menu.png) no-repeat center center;
-        position: absolute;
-        right: 1rem;
-        top: 1.6rem;
-    }
-    /**ICONO CERRAR MENU Y MODAL IMG**/
-    header > div:nth-of-type(1) nav > .menuX,
-    body section:nth-of-type(3) > div:nth-of-type(2) div{
-        width: 24px;
-        height: 24px;
-        background: url(../img/iconos/letra_x.png) no-repeat center center;
-        position: fixed;
-        right: 1rem;
-        top: 1.6rem;
-        z-index: 3;
-    }
-    /**MENU OCULTO**/
-    header > div:nth-of-type(1) nav ul{
-        width: 62vw;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        padding-top: 3rem;
-        background-color: #2A2A2A;
-        transform: translateX(100%);
-        transition: 0.3s ease-out;
-        z-index: 2;
-    }
-    /**MENU VISIBLE**/
-    header > div:nth-of-type(1) nav .menuActive,
-    header > div:nth-of-type(1) .menuActive
-    {
-        transform: translateX(0%);
-    }
-    /**ESTILOS DEL UL LI A**/
-    header > div:nth-of-type(1) nav ul li{
-        margin-bottom: .125rem;
-    }
-    header > div:nth-of-type(1) nav ul li a{
-        padding: 0 0 1.4rem 1.25rem;
-        color: #baa472;
-    }
-    /**HEADER > DIV[1] > DIV**/
-    /*Este div es el fondo negro que cubre todo el viewport cuando se abre el menu hamburguesa*/
-    header > div:nth-of-type(1) > div{
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        transform: translateX(-100%);
-        background-color: #2a2a2a82;
-        z-index: 1;
-    }
-    /*Dimesiones para hacer mas chico el boton que esta en HEADER*/
-    header button{
-        max-width: 255px;
-        margin-top: 100px;
-        background-color: #81664be3;
-    }
-
-    
-/*
-    header button{
-        display: none;
-    }*/
-}
-/*************************************/
-
 
 /**ESTILOS DEL DIV H2 BARBERIA**/
 header > div:nth-of-type(2) h2{
@@ -692,17 +614,6 @@ footer p span{
     body section:nth-of-type(1){
         padding: 0 2rem;
     }
-    body section:nth-of-type(1) article{
-        display: grid;
-        grid-template-columns: 210px 500px;
-        grid-column-gap: 40px;
-    }
-    /**FONDO DE COLOR IMG**/
-    body section:nth-of-type(1) figure{
-        margin-bottom: 0;
-        line-height: 0px;
-    }
-
 
     /*///////////////NUESTROS SERVICIOS//////////////*/
     body section:nth-of-type(2) figure figcaption{
@@ -823,5 +734,123 @@ footer p span{
         display: flex;
         justify-content: space-between;
         padding: 2rem;
+    }
+    /*///////////////SOBRE NOSOTROS//////////////*/
+    body section:nth-of-type(1) article{
+        display: grid;
+        grid-template-columns: 210px 500px;
+        grid-column-gap: 26px;
+    }
+}
+
+/*************************************/
+@media screen and (max-width: 979px){
+    /**ICONO HAMBURGUESA**/
+    header > div:nth-of-type(1) nav > div{
+        width: 24px;
+        height: 24px;
+        background: url(../img//iconos/menu.png) no-repeat center center;
+        position: absolute;
+        right: 1rem;
+        top: 1.6rem;
+    }
+    /**ICONO CERRAR MENU Y MODAL IMG**/
+    header > div:nth-of-type(1) nav > .menuX,
+    body section:nth-of-type(3) > div:nth-of-type(2) div{
+        width: 24px;
+        height: 24px;
+        background: url(../img/iconos/letra_x.png) no-repeat center center;
+        position: fixed;
+        right: 1rem;
+        top: 1.6rem;
+        z-index: 3;
+    }
+    /**MENU OCULTO**/
+    header > div:nth-of-type(1) nav ul{
+        width: 62vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding-top: 3rem;
+        background-color: #2A2A2A;
+        transform: translateX(100%);
+        transition: 0.3s ease-out;
+        z-index: 2;
+    }
+    /**MENU VISIBLE**/
+    header > div:nth-of-type(1) nav .menuActive,
+    header > div:nth-of-type(1) .menuActive
+    {
+        transform: translateX(0%);
+    }
+    /**ESTILOS DEL UL LI A**/
+    header > div:nth-of-type(1) nav ul li{
+        margin-bottom: .125rem;
+    }
+    header > div:nth-of-type(1) nav ul li a{
+        padding: 0 0 1.4rem 1.25rem;
+        color: #baa472;
+    }
+    /**HEADER > DIV[1] > DIV**/
+    /*Este div es el fondo negro que cubre todo el viewport cuando se abre el menu hamburguesa*/
+    header > div:nth-of-type(1) > div{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        transform: translateX(-100%);
+        background-color: #2a2a2a82;
+        z-index: 1;
+    }
+    /*Dimesiones para hacer mas chico el boton que esta en HEADER*/
+    header button{
+        max-width: 255px;
+        margin-top: 100px;
+        background-color: #81664be3;
+    }
+}
+/*************************************/
+
+@media screen and (min-width: 980px){
+    /*************************/
+    /**H1 LOGO**/
+    header > div:nth-of-type(1) h1{
+        margin: initial;
+        margin-right: 45px;
+    }
+    /**HEADER > DIV**/
+    header > div, header > ul{
+        max-width: 938px;
+        margin: auto;
+    }
+    header > div:first-child{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /**HEADER > DIV NAV UL**/
+    header > div nav ul{
+        display: flex;
+    }
+    /**ESTILOS DEL UL LI A**/
+    header > div:nth-of-type(1) nav ul li a{
+        padding: 5px 1rem;
+        margin: 0 5px;
+    }
+    header > div:nth-of-type(1) nav ul li:last-child a{
+        border: 1px solid #BAA472;
+        border-radius: 5px;
+    }
+    /**HEADER > UL**/
+    header > ul{
+        margin-top: 214px;
+        padding: 2rem 5px;
+    }
+    /*************************/
+
+    /**Ocultamos el boton (Reservar turno) del header en vista para PC**/
+    header button{
+        display: none;
     }
 }
