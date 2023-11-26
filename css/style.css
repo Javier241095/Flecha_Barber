@@ -949,10 +949,13 @@ footer p span{
     /*///////////////GALERIA//////////////*/
     /**ESTILO DE LAS IMG MINIATURA**/
     body section:nth-of-type(3) > div:nth-of-type(1){
-        grid-template-columns: 416px repeat(2, 208px);
+        max-width: 832px;
+        margin: auto;
+        grid-template-columns: 350px 274px 208px;
         grid-template-rows: repeat(2, 208px);
         justify-content: center;
         grid-gap: 10px;
+        position: relative;
     }
     
 
@@ -960,6 +963,17 @@ footer p span{
     body section:nth-of-type(3) > div:nth-of-type(1) figure:nth-of-type(4){
         grid-column-start: 2;
         grid-column-end: 3;
+        max-width: 208px;
+    }
+
+     /*///////////////GALERIA//////////////*/
+    /**ESTILO DE LA ULTIMA IMG CENTRADA AL MEDIO**/
+    body section:nth-of-type(3) > div:nth-of-type(1) figure:nth-of-type(5){
+        max-width: 274px;
+        width: 274px;
+        position: absolute;
+        bottom: 0;
+        right: -11px;
     }
 
     /*///////////////CONTACTO//////////////*/
