@@ -10,6 +10,10 @@
     scroll-behavior: smooth;
 }
 
+body{
+    background-color:#F0EBE8;
+}
+
 span{
     display: inline-block;
 }
@@ -85,7 +89,7 @@ header{
     width: 100vw;
     height: 667px;
     background: url(../img/banner/banner_cell_tablet.jpg) no-repeat center center;
-    margin-bottom: 3.75rem; /*60px*/
+    margin-bottom: 5rem; /*80px*/
 }
 
 .movil{
@@ -169,7 +173,7 @@ header > ul{
 
 /*///////////////SOBRE NOSOTROS//////////////*/
 body section:nth-of-type(1){
-    margin-bottom: 44px;
+    margin-bottom: 64px;
     padding: 0 1rem;
 }
 /**FONDO DE COLOR IMG**/
@@ -182,7 +186,7 @@ body section:nth-of-type(1) figure{
 
 /*///////////////NUESTROS SERVICIOS//////////////*/
 body section:nth-of-type(2){
-    margin-bottom: 3.75rem; /*60px*/
+    margin-bottom: 5rem; /*80px*/
 }
 
 body section:nth-of-type(2) figure img{
@@ -190,7 +194,7 @@ body section:nth-of-type(2) figure img{
 }
 
 body section:nth-of-type(2) figure figcaption {
-    margin-top: 3.75rem; /*60px*/
+    margin-top: 5rem; /*80px*/
     background-color: #f2f2f2;
     padding: 20px 1rem 30px 1rem;
 }
@@ -232,12 +236,11 @@ body section:nth-of-type(3) > div:nth-of-type(1){
     justify-content: center;
     grid-gap: 10px;
 }
-/**ESTILO DE LA ULTIMA IMG CENTRADA AL MEDIO**/
-body section:nth-of-type(3) > div:nth-of-type(1) figure:nth-of-type(5){
-    grid-column-start: -1;
-    grid-column-end: -3;
-    margin: auto;
+
+body section:nth-of-type(3) > div:nth-of-type(1) figure img{
+    filter: grayscale(80%);
 }
+
 /**ESTILO PARA GENERAR LA MODAL IMG**/
 body section:nth-of-type(3){
     position: relative;
@@ -312,7 +315,7 @@ body section:nth-of-type(3) > div:nth-of-type(2) ul:nth-of-type(2) .active{
 /*///////////////CONTACTO//////////////*/
 /**ASIDE CONTACTO**/
 body aside:nth-of-type(1){
-    margin-top: 3.75rem;
+    margin-top: 5rem; /*80px*/
 }
 /**ASIDE CONTACTO DIV**/
 body aside:nth-of-type(1) div{
@@ -321,7 +324,7 @@ body aside:nth-of-type(1) div{
 }
 /**ASIDE CONTACTO DV H2**/
 body aside:nth-of-type(1) div h2{
-    /*color: #f2f2f2;*/
+    color: #f2f2f2;
     max-width: 170px;
     margin-bottom: 20px;
     background-position: -21px 34px;
@@ -377,7 +380,7 @@ body aside:nth-of-type(1) div ul li a{
 /*///////////////RESERVAR TURNO//////////////*/
 /**ASIDE ID RESERVA**/
 body aside:nth-of-type(2){
-    margin-top: 3.75rem;
+    margin-top: 5rem; /*80px*/
     padding: 0 1rem;
 }
 /**ASIDE RESERVA H2**/
@@ -389,6 +392,7 @@ body aside:nth-of-type(2) > div{
     padding: 1rem;
     background-color: #fdd579;
     border-radius: 10px;
+    box-shadow: -2px 3px 6px -2px rgb(0 0 0 / 10%);
 }
 /**ASIDE RESERVA UL LI**/
 body aside:nth-of-type(2) > div > ul li{
@@ -422,7 +426,8 @@ body aside:nth-of-type(2) form div input{
     border: 1px solid #6666664d;
     outline: none;
     color: #333;
-    box-shadow: -2px 3px 6px -2px rgb(0 0 0 / 10%);
+    background-color: #f2f2f2;
+    /*box-shadow: -2px 3px 6px -2px rgb(0 0 0 / 10%);*/
 }
 /**ASIDE RESERVA FORM DIV HORARIOS**/
 body aside:nth-of-type(2) form div:nth-of-type(4){
@@ -445,7 +450,8 @@ body aside:nth-of-type(2) form div h4{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: -2px 3px 6px -2px rgb(0 0 0 / 10%);
+    background-color: #f2f2f2;
+    /*box-shadow: -2px 3px 6px -2px rgb(0 0 0 / 10%);*/
 }
 body aside:nth-of-type(2) form div h4 span{
     padding: 8px;
@@ -467,7 +473,7 @@ body aside:nth-of-type(2) form > div div{
 }
 /**ASIDE RESERVA FORM > DIV[4] UL OCULTO**/
 body aside:nth-of-type(2) form > div > ul{
-    background-color: #fff;
+    background-color: #F0EBE8;
     width: 100vw;
     height: 80vh;
     padding: 32px 32px 12px 32px;
@@ -487,15 +493,16 @@ body aside:nth-of-type(2) form > div > .HsActivo{
 /**ASIDE RESERVA FORM > DIV[4] > UL LI**/
 body aside:nth-of-type(2) form > div > ul li{
     width: 100%;
-    max-width: 446px;
+    max-width: 436px;
     margin: auto;
     margin-bottom: 20px;
     padding: 10px;
-    border: 1px solid #BAA472;
+    border: 1px solid #6666664d;
+    background-color: #f2f2f2;
     border-radius: 10px;
     text-align: center;
     font-weight: 500;
-    box-shadow: -2px 3px 6px -2px rgb(0 0 0 / 10%);
+    /*box-shadow: -2px 3px 6px -2px rgb(0 0 0 / 10%);*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -539,7 +546,7 @@ body aside:nth-of-type(2) form div p{
 
 /*///////////////FOOTER//////////////*/
 footer{
-    margin-top: 3.75rem;
+    margin-top: 5rem; /*80px*/
     padding: 20px 32px;
     background-color: #2A2A2A;
 }
@@ -653,7 +660,7 @@ footer p span{
         padding: 0 2rem;
         max-width: 500px;
         margin: auto;
-        margin-top: 3.75rem;
+        margin-top: 5rem; /*80px*/
     }
     /*///////////////GALERIA//////////////*/
     /**ESTILO DE LAS IMG MINIATURA**/
@@ -765,7 +772,7 @@ footer p span{
         max-width: 1300px;
         height: 550px;
         margin: auto;
-        margin-bottom: 3.75rem;
+        margin-bottom: 5rem; /*80px*/
         background: url(../img/banner/banner_tablet_pc.jpg) no-repeat center center;
     }
     /**ESTILOS DEL UL DIA Y HORARIO**/
@@ -792,7 +799,7 @@ footer p span{
     }
    /*///////////////SOBRE NOSOTROS//////////////*/
    body section:nth-of-type(1){
-    margin-bottom: 60px;
+    margin-bottom: 5rem; /*80px*/
    }
    body section:nth-of-type(1) article{
         grid-template-columns: 332px 500px;
@@ -812,10 +819,7 @@ footer p span{
         right: 1rem;
         top: 1.6rem;
     }
-    /**ICONO CERRAR MENU Y MODAL IMG**/
-    header > div:nth-of-type(1) nav > .menuX{
-        display: none;
-    }
+
     /**MENU OCULTO**/
     header > div:nth-of-type(1) nav ul{
         width: 62vw;
@@ -860,10 +864,22 @@ footer p span{
         margin-top: 100px;
         background-color: #81664be3;
     }
+
+    /*///////////////GALERIA//////////////*/
+    /**ESTILO DE LA ULTIMA IMG CENTRADA AL MEDIO**/
+    body section:nth-of-type(3) > div:nth-of-type(1) figure:nth-of-type(5){
+        grid-column-start: -1;
+        grid-column-end: -3;
+        margin: auto;
+    }
 }
 /*************************************/
 
 @media screen and (min-width: 980px){
+    /**ICONO CERRAR MENU Y MODAL IMG**/
+    header > div:nth-of-type(1) nav > .menuX{
+        display: none;
+    }
     /*************************/
     /**H1 LOGO**/
     header > div:nth-of-type(1) h1{
@@ -927,6 +943,31 @@ footer p span{
         margin-top: 0;
         background-color: #f2f2f2;
         padding: 20px 20px 30px 20px;
+    }
+
+
+    /*///////////////GALERIA//////////////*/
+    /**ESTILO DE LAS IMG MINIATURA**/
+    body section:nth-of-type(3) > div:nth-of-type(1){
+        grid-template-columns: 416px repeat(2, 208px);
+        grid-template-rows: repeat(2, 208px);
+        justify-content: center;
+        grid-gap: 10px;
+    }
+    
+
+    /**ESTILO DE LA ULTIMA IMG CENTRADA AL MEDIO**/
+    body section:nth-of-type(3) > div:nth-of-type(1) figure:nth-of-type(4){
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    /*///////////////CONTACTO//////////////*/
+    /**ASIDE CONTACTO**/
+    body aside:nth-of-type(1){
+        display: grid;
+        grid-template-columns: 386px 466px;
+        justify-content: center;
     }
 }
 
