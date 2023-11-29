@@ -1,22 +1,22 @@
 let imgModal = [
     {
-        img: "img/galeria/imgModal/288462491_436407614660557_4061630958711063188_n.jpg",
+        img: "img/galeria/imgModal/imgModal_1.jpg",
         Alt : " ",
     },
     {
-        img: "img/galeria/imgModal/312645148_671840001166324_2100627630034627_n.jpg",
+        img: "img/galeria/imgModal/imgModal_2.jpg",
         Alt : " ",
     },
     {
-        img: "img/galeria/imgModal/322671696_119200714213639_7781986510962650683_n.jpg",
+        img: "img/galeria/imgModal/imgModal_3.jpg",
         Alt : " ",
     },
     {
-        img: "img/galeria/imgModal/122296400_1312124739126185_5194746244852246128_n.jpg",
+        img: "img/galeria/imgModal/imgModal_4.jpg",
         Alt : " ",
     },
     {
-        img: "img/galeria/imgModal/330195960_587088249811299_2503661949690617732_n.jpg",
+        img: "img/galeria/imgModal/imgModal_5.jpg",
         Alt : " ",
     },
 ];
@@ -60,7 +60,7 @@ imgTarget.addEventListener('click', (e)=>{
         div.appendChild(ulBtns);
         //<div>(1) ul(2)
         let ulIndicador = d.createElement('ul');
-        div.appendChild(ulIndicador);
+        figure.appendChild(ulIndicador);
         //Se recorre el array imgModal para crear las misma cantidad de indicadores que de imagenes en el array.
         imgModal.forEach(function(nombre, i){
             //Se crea la atique li
