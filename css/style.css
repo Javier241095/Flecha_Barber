@@ -106,6 +106,7 @@ footer h2{
     width: 160px;
     height: 40px;
     margin: auto;
+    margin-top: 4px;
     background: url(../img/galeria/logo_flecha_barber.png) no-repeat;
     background-size: contain;
     font-size: 0;
@@ -622,8 +623,6 @@ footer p span{
 
 /*///////////////MAEDIA QUERIS//////////////*/
 @media screen and (min-width: 500px){
-    
-    
     /**ICONO HAMBURGUESA**/
     header > div:nth-of-type(1) nav > div{
         right: 2rem;
@@ -671,6 +670,18 @@ footer p span{
     body section:nth-of-type(3) > div:nth-of-type(1) figure:nth-of-type(5){
         max-width: 213px;
     }
+    /**ESTILO FIGURE IMG MODAL**/
+    body section:nth-of-type(3) > div:nth-of-type(2) figure img{
+        max-width: 340px;
+    }
+    /**ESTILO DEL UL BTN**/
+    body section:nth-of-type(3) > div:nth-of-type(2) > ul{
+        width: 100%;
+        max-width: 395px;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+    }
 }
 
 @media screen and (min-width: 574px){
@@ -683,6 +694,8 @@ footer p span{
     body section:nth-of-type(3) > div:nth-of-type(1) figure:nth-of-type(5){
         max-width: 250px;
     }
+
+
 }
 
 /*Esta MEDIA QUERI sirve para dejar de mostra el boton de SCROLL que esa en el header*/
@@ -876,6 +889,12 @@ footer p span{
 /*************************************/
 
 @media screen and (min-width: 980px){
+    /**ESTILOS DEL BOTON RESERVAR TURNO**/
+    header button, section button, aside input[type="submit"]{
+        max-width: 190px;
+        margin: auto;
+        margin-top: 50px;
+    }
     /**ICONO CERRAR MENU Y MODAL IMG**/
     header > div:nth-of-type(1) nav > .menuX{
         display: none;
@@ -935,6 +954,7 @@ footer p span{
         justify-content: center;
         align-items: center;
         grid-gap: 40px;
+        margin-top: 5rem;
     }
 
     body section:nth-of-type(2) figure img{
@@ -986,3 +1006,43 @@ footer p span{
     }
 }
 
+@media screen and (min-width: 1074px){
+    /*///////////////SOBRE NOSOTROS//////////////*/
+    body section:nth-of-type(1){
+        padding: 0;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    /*///////////////NUESTROS SERVICIOS//////////////*/
+    body section:nth-of-type(2) figure{
+        grid-template-columns: 472px 500px;
+        grid-gap: 38px;
+    }
+
+    body section:nth-of-type(2) figure figcaption {
+        margin-top: 0;
+        background-color: #f2f2f2;
+        padding: 20px 2rem 30px 2rem;
+    }
+
+    /*///////////////CONTACTO//////////////*/
+    /**ASIDE CONTACTO**/
+    body aside:nth-of-type(1){
+        grid-template-columns: repeat(2, 500px);
+    }
+
+    /*///////////////GALERIA//////////////*/
+    /**ESTILO DE LAS IMG MINIATURA**/
+    body section:nth-of-type(3) > div:nth-of-type(1){
+        max-width: 1000px;
+        grid-template-columns: 410px 350px 208px;
+    }
+
+    /**ESTILO DE LA IMG NUMERO 5**/
+    body section:nth-of-type(3) > div:nth-of-type(1) figure:nth-of-type(5){
+        max-width: 350px;
+        width: 350px;
+        right: 5px;
+    }
+}
