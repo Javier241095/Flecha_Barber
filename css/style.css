@@ -29,7 +29,7 @@ a{
     font-weight: 500;
 }
 
-section p{
+section p, body > div > div p{
     line-height: 1.4rem;
     padding-bottom: 1rem;
 }
@@ -53,7 +53,7 @@ iframe{
 }
 
 /***SECTION Imagen decorativa que aparace debajo de los H2***/
-section h2{
+section h2, body > div > div h2{
     padding-bottom: 2rem;
     background: url(../img/iconos/linea.png) no-repeat;
     background-position: 0 34px;
@@ -161,7 +161,7 @@ header > ul{
 
   /**ICONO CERRAR MENU Y MODAL IMG**/
   header > div:nth-of-type(1) nav > .menuX,
-  body section:nth-of-type(3) > div:nth-of-type(2) div{
+  body section:nth-of-type(3) > div:nth-of-type(2) div, body > div > div div{
       width: 24px;
       height: 24px;
       background: url(../img/iconos/letra_x.png) no-repeat center center;
@@ -247,7 +247,7 @@ body section:nth-of-type(3){
     position: relative;
 }
 /**ESTILO DEL DIV MODAL IMG**/
-body section:nth-of-type(3) > div:nth-of-type(2){
+body section:nth-of-type(3) > div:nth-of-type(2), body > div{
    width: 100vw;
    height: 100vh;
    top: 0;
@@ -547,6 +547,24 @@ body aside:nth-of-type(2) form div p{
     background-position: 0 2px;
 }
 
+/**DIV MENSAJE DE RESERVA DE TURNO**/
+body > div > div{
+    max-width: 320px;
+    padding: 1rem;
+    background-color: #F0EBE8;
+    border-left: 4px solid #fdd579;
+    border-radius: 10px;
+}
+
+body > div > div h2{
+    padding-bottom: 18px;
+    background-position: 9px 34px;
+}
+
+body > div > div p:last-child{
+    font-weight: 500;
+    padding-bottom: 0;
+}
 
 /*///////////////FOOTER//////////////*/
 footer{
@@ -1031,6 +1049,18 @@ footer > div div + p span{
 }
 
 @media screen and (min-width: 1074px){
+    /**H1 LOGO**/
+    header > div:nth-of-type(1) h1{
+        margin-right: 108px;
+    }
+    /**HEADER > DIV**/
+    header > div, header > ul{
+        max-width: 1000px;
+    }
+    header > div:first-child {
+        justify-content: unset;
+    }
+
     /*///////////////SOBRE NOSOTROS//////////////*/
     body section:nth-of-type(1){
         padding: 0;
