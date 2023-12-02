@@ -123,7 +123,7 @@ header > div:nth-of-type(2) h2{
 }
 /**ESTILOS DEL DIV P MARCA TU ESTILO**/
 header > div:nth-of-type(2) p,
-footer > div p{
+footer > div div p{
     max-width: 329px;
     margin: auto;
     padding-top: 2px;
@@ -555,24 +555,24 @@ footer{
     background-color: #2A2A2A;
 }
 /**FOOTER H2 LOGO**/
-footer h2{
+footer > div div h2{
     margin: auto;
     margin-bottom: 1rem;
 }
-/**FOOTER DIV H3**/
-footer > div p{
+/**FOOTER DIV P**/
+footer > div div p{
     max-width: 200px;
     margin-top: 10px;
     font-size: 1.125rem;
 }
 /**FOOTER DIV UL**/
-footer div ul{
+footer > div div ul{
     display: flex;
     justify-content: center;
     margin: 20px 0;
 }
 /**FOOTER DID UL LI A(FACEBOOK)**/
-footer div ul li:first-child a{
+footer > div div ul li:first-child a{
     width: 14px;
     height: 14px;
     margin-right: 1rem;
@@ -584,7 +584,7 @@ footer div ul li:first-child a{
     font-size: 0;
 }
 /**FOOTER DID UL LI A(INSTAGRAM)**/
-footer div ul li:nth-of-type(2) a{
+footer > div div ul li:nth-of-type(2) a{
     width: 14px;
     height: 14px;
     margin-right: 1rem;
@@ -596,7 +596,7 @@ footer div ul li:nth-of-type(2) a{
     font-size: 0;
 }
 /**FOOTER DID UL LI A(WHATSAPP)**/
-footer div ul li:last-child a{
+footer > div div ul li:last-child a{
     width: 14px;
     height: 14px;
     padding: 14px;
@@ -607,7 +607,7 @@ footer div ul li:last-child a{
     font-size: 0;
 }
 /**FOOTER DID UL LI P(COPYRIGHT)**/
-footer div + p{
+footer > div div + p{
     font-size: .875rem;
     font-weight: 600;
     padding: 0 0 0 26px;
@@ -617,7 +617,7 @@ footer div + p{
     color: #666;
 }
 /**FOOTER DID UL LI P(SPAN)**/
-footer p span{
+footer > div div + p span{
     color: #666;
 }
 
@@ -801,6 +801,30 @@ footer p span{
         display: grid;
         grid-template-columns: 222px 500px;
         grid-column-gap: 25px;
+    }
+    /*///////////////FOOTER//////////////*/
+    footer > div{
+        max-width: 1000px;
+        margin: auto;
+        margin-top: 10px;
+        display:flex;
+        justify-content: space-between;
+    }
+
+    footer > div div{
+        width: 200px;
+    }
+    /**FOOTER H2 LOGO**/
+    footer h2{
+        margin: 0;
+    }
+    /**FOOTER DIV P**/
+    footer > div div p{
+        margin-top: 0;
+    }
+    /**FOOTER DID UL LI P(COPYRIGHT)**/
+    footer div + p{
+        margin-top: 8px;
     }
 }
 
