@@ -14,7 +14,7 @@ formulario.onsubmit = function(){
     return enviar;
 }
 
-if(enviar != false){
+/*if(enviar != false){
     let bodyDiv = d.querySelector('body');
         //div(1)
         let DivMjs = d.createElement('div');
@@ -37,4 +37,4 @@ if(enviar != false){
         let p2 = d.createElement('p');
         p2.innerHTML = 'Recorda estar 15 minutos antes.';
         DivCaja.appendChild(p2);
-}
+}*/
