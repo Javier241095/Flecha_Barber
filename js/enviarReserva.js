@@ -1,4 +1,5 @@
 let Reserva = [];
+let msjDiv = " ";
 
 if(localStorage.Reserva){
     Reserva = JSON.parse(localStorage.Reserva);
@@ -6,7 +7,7 @@ if(localStorage.Reserva){
     localStorage.Reserva = JSON.stringify(Reserva);
 }
 
-function EnviarReserva(){
+function EnviarReserva(e){
     if(enviar){
         Reserva.push(
             {
@@ -22,23 +23,12 @@ function EnviarReserva(){
                 Horarios.splice(h4.innerHTML, 1)
             }
         }
+
+        msjDiv = "msjActivo";
+
         localStorage.Reserva = JSON.stringify(Reserva);
         localStorage.Horarios = JSON.stringify(Horarios);
+        localStorage.msjDiv = JSON.stringify(msjDiv);
         location.reload();
-
-        
-
-        
     }
 }
-/*
-<div>
-    <div>
-        <div></div>
-        <h2>Turno reservado</h2>
-        <p>Hola Javier Lescano te esperamos hoy a las 10:00hs en nuestro local ubicado en Domingo Salaberry 961, Claypole.</p>
-
-        <p>Recorda estar 15 minutos antes.</p>
-    </div>
-</div>
-*/

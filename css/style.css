@@ -161,7 +161,7 @@ header > ul{
 
   /**ICONO CERRAR MENU Y MODAL IMG**/
   header > div:nth-of-type(1) nav > .menuX,
-  body section:nth-of-type(3) > div:nth-of-type(2) div, body > div > div div{
+  body section:nth-of-type(3) > div:nth-of-type(2) div{
       width: 24px;
       height: 24px;
       background: url(../img/iconos/letra_x.png) no-repeat center center;
@@ -247,7 +247,7 @@ body section:nth-of-type(3){
     position: relative;
 }
 /**ESTILO DEL DIV MODAL IMG**/
-body section:nth-of-type(3) > div:nth-of-type(2), body > div{
+body section:nth-of-type(3) > div:nth-of-type(2){
    width: 100vw;
    height: 100vh;
    top: 0;
@@ -256,6 +256,35 @@ body section:nth-of-type(3) > div:nth-of-type(2), body > div{
    align-items: center;
    justify-content: center;
    background-color: #2a2a2af5;
+}
+
+/**ICONO CERRAR MENU Y MODAL IMG**/
+body > div > div{
+    position: relative;
+}
+body > div > div div{
+    width: 24px;
+    height: 24px;
+    background: url(../img/iconos/cerrar.png) no-repeat center center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 3;
+}
+
+body > div{
+   display: none;
+}
+
+.msjActivo{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a2a2af5;
 }
 /**ESTILO FIGURE **/
 body section:nth-of-type(3) > div:nth-of-type(2) figure img{
@@ -550,7 +579,7 @@ body aside:nth-of-type(2) form div p{
 /**DIV MENSAJE DE RESERVA DE TURNO**/
 body > div > div{
     max-width: 320px;
-    padding: 1rem;
+    padding: 2rem 1rem; 
     background-color: #F0EBE8;
     border-left: 4px solid #fdd579;
     border-radius: 10px;
