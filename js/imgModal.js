@@ -1,23 +1,23 @@
 let imgModal = [
     {
         img: "img/galeria/imgModal/imgModal_1.jpg",
-        Alt : " ",
+        Alt : "Corte de pelo en degrade y una linea al costado",
     },
     {
         img: "img/galeria/imgModal/imgModal_2.jpg",
-        Alt : " ",
+        Alt : "Corte de pelo en degrade y perfilado de barba mas ceja",
     },
     {
         img: "img/galeria/imgModal/imgModal_3.jpg",
-        Alt : " ",
+        Alt : "Corte de pelo en degrade mas un dibujo de una estrella fugas a uno de los lados",
     },
     {
         img: "img/galeria/imgModal/imgModal_4.jpg",
-        Alt : " ",
+        Alt : "Corte de pelo con cresta en degrade",
     },
     {
         img: "img/galeria/imgModal/imgModal_5.jpg",
-        Alt : " ",
+        Alt : "Corte de pelo en degrade clasico",
     },
 ];
 

@@ -33,4 +33,3 @@ ul.addEventListener('click', (e)=> {
         horario.value = e.target.innerText;
     }    
 })
-

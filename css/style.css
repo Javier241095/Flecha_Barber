@@ -140,36 +140,36 @@ footer > div div p{
 header > ul{
     margin-top: 76px;
     text-align: center;
- }
+}
  
- header > ul li{
-     padding: 0 0 10px 0;
- }
- 
- header > ul li:nth-of-type(2){
-     padding-bottom: 16px;
- }
- 
- header > ul li, 
- header > ul li a{
-     /*font-size: .875rem;*/
-     font-size: 1rem;
-     font-family: 'Bebas Neue';
-     color: #baa472;
-     /*color: #baa472;*/
- }
+header > ul li{
+    padding: 0 0 10px 0;
+}
 
-  /**ICONO CERRAR MENU Y MODAL IMG**/
-  header > div:nth-of-type(1) nav > .menuX,
-  body section:nth-of-type(3) > div:nth-of-type(2) div{
-      width: 24px;
-      height: 24px;
-      background: url(../img/iconos/letra_x.png) no-repeat center center;
-      position: fixed;
-      right: 1rem;
-      top: 1.6rem;
-      z-index: 3;
-  }
+header > ul li:nth-of-type(2){
+    padding-bottom: 16px;
+}
+ 
+header > ul li, 
+header > ul li a{
+    /*font-size: .875rem;*/
+    font-size: 1rem;
+    font-family: 'Bebas Neue';
+    color: #baa472;
+    /*color: #baa472;*/
+}
+
+/**ICONO CERRAR MENU Y MODAL IMG**/
+header > div:nth-of-type(1) nav > .menuX,
+body section:nth-of-type(3) > div:nth-of-type(2) div{
+    width: 24px;
+    height: 24px;
+    background: url(../img/iconos/letra_x.png) no-repeat center center;
+    position: fixed;
+    right: 1rem;
+    top: 1.6rem;
+    z-index: 3;
+}
 
 
 /*///////////////SOBRE NOSOTROS//////////////*/
@@ -184,6 +184,7 @@ body section:nth-of-type(1) figure{
     margin-bottom: 40px;
     background-color: #666;
 }
+
 
 /*///////////////NUESTROS SERVICIOS//////////////*/
 body section:nth-of-type(2){
@@ -258,34 +259,6 @@ body section:nth-of-type(3) > div:nth-of-type(2){
    background-color: #2a2a2af5;
 }
 
-/**ICONO CERRAR MENU Y MODAL IMG**/
-body > div > div{
-    position: relative;
-}
-body > div > div div{
-    width: 24px;
-    height: 24px;
-    background: url(../img/iconos/cerrar.png) no-repeat center center;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    z-index: 3;
-}
-
-body > div{
-   display: none;
-}
-
-.msjActivo{
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #2a2a2af5;
-}
 /**ESTILO FIGURE **/
 body section:nth-of-type(3) > div:nth-of-type(2) figure img{
     padding: 10px;
@@ -595,6 +568,35 @@ body > div > div p:last-child{
     padding-bottom: 0;
 }
 
+body > div > div{
+    position: relative;
+}
+/**ICONO CERRAR MODAL MSJ**/
+body > div > div div{
+    width: 24px;
+    height: 24px;
+    background: url(../img/iconos/cerrar.png) no-repeat center center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 3;
+}
+
+body > div{
+   display: none;
+}
+
+.msjActivo{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a2a2af5;
+}
+
 /*///////////////FOOTER//////////////*/
 footer{
     margin-top: 5rem; /*80px*/
@@ -728,6 +730,13 @@ footer > div div + p span{
         display: flex;
         justify-content: space-between;
         position: absolute;
+    }
+
+    /**ESTILOS DEL BOTON RESERVAR TURNO**/
+    header button, section button, aside input[type="submit"]{
+        max-width: 190px;
+        margin: auto;
+        margin-top: 50px;
     }
 }
 
@@ -929,7 +938,7 @@ footer > div div + p span{
     }
     header > div:nth-of-type(1) nav ul li a{
         padding: 0 0 1.4rem 1.25rem;
-        color: #baa472;
+        /*color: #baa472;*/
     }
     /**HEADER > DIV[1] > DIV**/
     /*Este div es el fondo negro que cubre todo el viewport cuando se abre el menu hamburguesa*/
@@ -960,15 +969,13 @@ footer > div div + p span{
 /*************************************/
 
 @media screen and (min-width: 980px){
-    /**ESTILOS DEL BOTON RESERVAR TURNO**/
-    header button, section button, aside input[type="submit"]{
-        max-width: 190px;
-        margin: auto;
-        margin-top: 50px;
-    }
     /**ICONO CERRAR MENU Y MODAL IMG**/
     header > div:nth-of-type(1) nav > .menuX{
         display: none;
+    }
+    /**ESTILOS DEL BOTON RESERVAR TURNO**/
+    section button:hover, aside input[type="submit"]:hover{
+        background-color: #9b7854;
     }
     /*************************/
     /**H1 LOGO**/
@@ -994,6 +1001,10 @@ footer > div div + p span{
     header > div:nth-of-type(1) nav ul li a{
         padding: 5px 1rem;
         margin: 0 5px;
+    }
+
+    header > div:nth-of-type(1) nav ul li a:hover{
+        color: #baa472;
     }
     header > div:nth-of-type(1) nav ul li:last-child a{
         border: 1px solid #BAA472;
