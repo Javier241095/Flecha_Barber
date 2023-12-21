@@ -31,7 +31,7 @@ a{
 
 section p, body > div > div p{
     line-height: 1.4rem;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 figure img{
@@ -203,7 +203,6 @@ body section:nth-of-type(2) figure figcaption {
 
 /**POSICION DE LA IMG DEL H2**/
 body section:nth-of-type(2) figure figcaption div h2{
-    
     background-position: 21px 34px;
 }
 /**ESTILO DE LA LISTA DE PRECIOS**/
@@ -459,6 +458,7 @@ body aside:nth-of-type(2) form div h4{
     background-color: #f2f2f2;
     /*box-shadow: -2px 3px 6px -2px rgb(0 0 0 / 10%);*/
 }
+
 body aside:nth-of-type(2) form div h4 span{
     padding: 8px;
     background: url(../img/iconos/flecha_abajo.png) no-repeat center center;

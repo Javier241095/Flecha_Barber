@@ -14,7 +14,7 @@ body{
     background-color:#F0EBE8;
 }
 
-section{
+section, aside{
     margin: 80px 0;
 }
 
@@ -26,7 +26,7 @@ h2{
 }
 
 /***SECTION Imagen decorativa que aparace debajo de los H2***/
-section h2, body > div > div h2{
+section h2, body > div > div h2, aside h2{
     padding-bottom: 2rem;
     background: url(../img/iconos/linea.png) no-repeat;
     background-position: 0 34px;
@@ -48,10 +48,20 @@ a{
     font-weight: 500;
 }
 
+span{
+    display: inline-block;
+}
+
 figure img{
     max-width: 100%;
     display: block;
     /*margin: auto;*/
+}
+
+iframe{
+    width: 100%;
+    height: 350px;
+    border: none;
 }
 
 /**ICONO CERRAR MENU Y MODAL IMG**/
@@ -64,6 +74,21 @@ body section:nth-of-type(3) > div:nth-of-type(2) div{
     right: 1rem;
     top: 1.6rem;
     z-index: 3;
+}
+
+/**ESTILOS DEL BOTON RESERVAR TURNO**/
+section button, aside input[type="submit"]{
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px 8px 12px 8px;
+    background: #81664b;
+    color: #f2f2f2;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    box-shadow: -2px 3px 6px -2px rgb(0 0 0 / 10%);
 }
 
 /*///////////////HEADER//////////////*/
@@ -175,7 +200,303 @@ body section:nth-of-type(2) figure img{
 
 body section:nth-of-type(2) figure figcaption {
     background-color: #f2f2f2;
-    padding: 20px 1rem 30px 1rem;
+    padding: 32px 1rem;
+}
+
+/**POSICION DE LA IMG DEL H2**/
+body section:nth-of-type(2) figure figcaption div h2{
+    background-position: 21px 34px;
+}
+
+body section:nth-of-type(2) figure figcaption div ul li{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    color: #BAA472;
+    border-bottom: 1px solid #6666664d;
+}
+
+/*///////////////GALERIA//////////////*/
+/**ESTILO DEL H2 GALERIA**/
+body section:nth-of-type(3) h2{
+    font-size: 5.3125rem;
+    text-align: center;
+    background-position: center 78px;
+}
+
+/**ESTILO DE LAS IMG MINIATURA**/
+body section:nth-of-type(3) > div:nth-of-type(1){
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    justify-content: center;
+    grid-gap: 10px 11px;
+}
+
+/*************************************/
+/**ESTILO PARA GENERAR LA MODAL IMG**/
+body section:nth-of-type(3){
+    position: relative;
+}
+
+/**ESTILO DEL DIV MODAL IMG**/
+body section:nth-of-type(3) > div:nth-of-type(2){
+   width: 100vw;
+   height: 100vh;
+   top: 0;
+   position: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #2a2a2af5;
+}
+
+/**ESTILO FIGURE **/
+body section:nth-of-type(3) > div:nth-of-type(2) figure img{
+    padding: 10px;
+    border: 2px solid #BAA472;
+}
+
+/**ESTILO FIGURE IMG MODAL**/
+body section:nth-of-type(3) > div:nth-of-type(2) figure img{
+    max-width: 300px;
+}
+
+/**ESTILO DEL UL BTN**/
+body section:nth-of-type(3) > div:nth-of-type(2) > ul{
+    width: 100%;
+    max-width: 355px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+
+/**ESTILO DEL UL LI BTN ANTERIOR**/
+body section:nth-of-type(3) > div:nth-of-type(2) > ul li:nth-of-type(1){
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/iconos/atras.png);
+    background-size: cover;
+    font-size: 0;
+    z-index: 3;
+}
+
+/**ESTILO DEL UL LI BTN SIGUIENTE**/
+body section:nth-of-type(3) > div:nth-of-type(2) > ul li{
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/iconos/adelante.png);
+    background-size: cover;
+    font-size: 0;
+}
+
+/**ESTILO DEL UL INDICADOR**/
+body section:nth-of-type(3) > div:nth-of-type(2) figure{
+    position: relative;
+}
+
+body section:nth-of-type(3) > div:nth-of-type(2) figure ul{
+    width: 100%;
+    max-width: 364px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+/**ESTILO DEL LOS LI INDICADORES**/
+body section:nth-of-type(3) > div:nth-of-type(2) figure ul li{
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+}
+/**ESTILO DEL LI INDICADOR ACTIVO**/
+body section:nth-of-type(3) > div:nth-of-type(2) figure ul .active{
+    background-color: #81664b;
+}
+/*************************************/
+
+
+/*///////////////CONTACTO//////////////*/
+/**ASIDE CONTACTO DIV**/
+body aside:nth-of-type(1) div{
+    background-color: #2A2A2A;
+    padding: 32px 1rem;
+}
+
+/**ASIDE CONTACTO DV H2**/
+body aside:nth-of-type(1) div h2{
+    color: #f2f2f2;
+    max-width: 170px;
+    background-position: center 34px;
+}
+
+/**ASIDE CONTACTO DIV UL LI**/
+body aside:nth-of-type(1) div ul li{
+    margin-bottom: 1rem;
+    color: #f2f2f2;/*#BAA472*/
+    display: flex;
+    align-items: center;
+}
+
+/**ASIDE CONTACTO DIV UL LI SPAN(UBICACION)**/
+body aside:nth-of-type(1) div ul li:first-child span{
+    width: 14px;
+    height: 14px;
+    margin-right: 1rem;
+    padding: 12px;
+    background: url(../img/iconos/ubicacion.png) no-repeat center center;
+    background-size: 14px;
+    border: 1px solid #BAA472;
+    border-radius: 50%;
+}
+
+/**ASIDE CONTACTO DIV UL LI SPAN(CALENDARIO)**/
+body aside:nth-of-type(1) div ul li:nth-of-type(2) span{
+    width: 14px;
+    height: 14px;
+    margin-right: 1rem;
+    padding: 12px;
+    background: url(../img/iconos/calendario.png) no-repeat center 4px;
+    background-size: 14px;
+    border: 1px solid #BAA472;
+    border-radius: 50%;;
+}
+
+/**ASIDE CONTACTO DIV UL LI SPAN(WSP)**/
+body aside:nth-of-type(1) div ul li:last-child span{
+    width: 14px;
+    height: 14px;
+    margin-right: 1rem;
+    padding: 12px;
+    background: url(../img/iconos/whatsapp_f.png) no-repeat center center;
+    background-size: 14px;
+    border: 1px solid #BAA472;
+    border-radius: 50%;
+}
+
+/**ASIDE CONTACTO DIV UL LI A**/
+body aside:nth-of-type(1) div ul li a{
+    color: #f2f2f2;
+    font-weight: 400;
+    border-bottom: 1px solid #6666664d;;
+}
+
+/*///////////////RESERVAR TURNO//////////////*/
+body aside:nth-of-type(2){
+    margin: 0 1rem;
+}
+/**ASIDE RESERVA H2**/
+body aside:nth-of-type(2) h2{
+    text-align: center;
+    background-position: center 34px;
+}
+
+body aside:nth-of-type(2) > div{
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #fdd579;
+    border-radius: 10px;
+}
+
+/**ASIDE RESERVA UL LI**/
+body aside:nth-of-type(2) > div > ul li{
+    margin-top: 1rem;
+    line-height: 1.4rem;
+}
+
+/**ASIDE RESERVA UL LI**/
+body aside:nth-of-type(2) > div > ul li a{
+    display: inline;
+    color: #333;
+}
+
+/**ASIDE RESERVA FORM DIV**/
+body aside:nth-of-type(2) form div{
+    margin-bottom: 24px;
+}
+
+/**ASIDE RESERVA FORM DIV LABEL**/
+body aside:nth-of-type(2) form div label{
+    display: block;
+    font-weight: 600;
+}
+
+/**ASIDE RESERVA FORM DIV INPUT**/
+body aside:nth-of-type(2) form div input{
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    border-radius: 10px;
+    border: 1px solid #6666664d;
+    outline: none;
+    color: #333;
+    background-color: #f2f2f2;
+}
+
+/**ASIDE RESERVA FORM DIV HORARIOS**/
+body aside:nth-of-type(2) form div:nth-of-type(4){
+    position: relative;
+}
+
+/**ASIDE RESERVA FORM DIV[4] H3**/
+body aside:nth-of-type(2) form div h3{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/**ASIDE RESERVA FORM DIV[4] H4 **/
+body aside:nth-of-type(2) form div h4{
+    width: 100%;
+    padding: 9px 10px;
+    margin: 6px 0;
+    border-radius: 10px;
+    border: 1px solid #6666664d;
+    font-size: .875rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+}
+
+body aside:nth-of-type(2) form div h4 span{
+    padding: 8px;
+    background: url(../img/iconos/flecha_abajo.png) no-repeat center center;
+    background-size: 10px;
+    border: 1px solid #BAA472;
+    border-radius: 50%;
+}
+
+/**ASIDE RESERVA FORM > DIV[4] DIV OCULTO**/
+body aside:nth-of-type(2) form > div div{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2a2a2a6b;
+    transform: translateY(100%);
+}
+
+/**ASIDE RESERVA FORM > DIV[4] > UL LI**/
+body aside:nth-of-type(2) form > div > ul li{
+    width: 100%;
+    max-width: 436px;
+    margin: auto;
+    margin-bottom: 16px;
+    padding: 8px 10px; 
+    border: 1px solid #6666664d;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*///////////////MAEDIA QUERIS//////////////*/
