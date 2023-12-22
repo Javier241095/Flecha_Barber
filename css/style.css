@@ -145,7 +145,7 @@ footer > div div p{
 
 /**ESTILOS DEL BOTON RESERVAR TURNO**/
 header button{
-    width: 140px;
+    width: 160px;
     display: block;
     color: #f2f2f2;
     font-size: .875rem;
@@ -155,13 +155,13 @@ header button{
     border-radius: 10px;
     margin: auto;
     margin-top: 114px;
-    padding: 1px 0 2px 0;
+    padding: 3px 0 4px 0;
     /*.875rem = 14px*/
 }
 
 /**ESTILOS DEL UL DIA Y HORARIO**/
 header > ul{
-    margin-top: 114px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -342,40 +342,32 @@ body aside:nth-of-type(1) div ul li{
     align-items: center;
 }
 
-/**ASIDE CONTACTO DIV UL LI SPAN(UBICACION)**/
-body aside:nth-of-type(1) div ul li:first-child span{
+/**ASIDE CONTACTO DIV UL LI SPAN**/
+body aside:nth-of-type(1) div ul li span{
     width: 14px;
     height: 14px;
     margin-right: 1rem;
     padding: 12px;
-    background: url(../img/iconos/ubicacion.png) no-repeat center center;
-    background-size: 14px;
     border: 1px solid #BAA472;
     border-radius: 50%;
+}
+/**(UBICACION)**/
+
+body aside:nth-of-type(1) div ul li:first-child span{
+    background: url(../img/iconos/ubicacion.png) no-repeat center center;
+    background-size: 14px;
 }
 
 /**ASIDE CONTACTO DIV UL LI SPAN(CALENDARIO)**/
 body aside:nth-of-type(1) div ul li:nth-of-type(2) span{
-    width: 14px;
-    height: 14px;
-    margin-right: 1rem;
-    padding: 12px;
     background: url(../img/iconos/calendario.png) no-repeat center 4px;
     background-size: 14px;
-    border: 1px solid #BAA472;
-    border-radius: 50%;;
 }
 
 /**ASIDE CONTACTO DIV UL LI SPAN(WSP)**/
 body aside:nth-of-type(1) div ul li:last-child span{
-    width: 14px;
-    height: 14px;
-    margin-right: 1rem;
-    padding: 12px;
     background: url(../img/iconos/whatsapp_f.png) no-repeat center center;
     background-size: 14px;
-    border: 1px solid #BAA472;
-    border-radius: 50%;
 }
 
 /**ASIDE CONTACTO DIV UL LI A**/
@@ -408,7 +400,7 @@ body aside:nth-of-type(2) > div > ul li{
     line-height: 1.4rem;
 }
 
-/**ASIDE RESERVA UL LI**/
+/**ASIDE RESERVA UL LI A**/
 body aside:nth-of-type(2) > div > ul li a{
     display: inline;
     color: #333;
@@ -471,6 +463,39 @@ body aside:nth-of-type(2) form div h4 span{
     border-radius: 50%;
 }
 
+/**ASIDE RESERVA FORM > DIV[4] > UL LI**/
+body aside:nth-of-type(2) form > div > ul li{
+    width: 100%;
+    max-width: 436px;
+    margin: auto;
+    margin-bottom: 16px;
+    padding: 9px 10px; 
+    border: 1px solid #6666664d;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: .875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body aside:nth-of-type(2) form > div > ul li{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+body aside:nth-of-type(2) form > div > ul li span{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background: url(../img/iconos/reloj.png) no-repeat center center;
+    background-size: 10px;
+    border: 1px solid #BAA472;
+    border-radius: 50%;
+}
+
 /**ASIDE RESERVA FORM > DIV[4] DIV OCULTO**/
 body aside:nth-of-type(2) form > div div{
     width: 100vw;
@@ -482,22 +507,114 @@ body aside:nth-of-type(2) form > div div{
     transform: translateY(100%);
 }
 
-/**ASIDE RESERVA FORM > DIV[4] > UL LI**/
-body aside:nth-of-type(2) form > div > ul li{
-    width: 100%;
-    max-width: 436px;
-    margin: auto;
-    margin-bottom: 16px;
-    padding: 8px 10px; 
-    border: 1px solid #6666664d;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    text-align: center;
+/**ASIDE RESERVA FORM > DIV[4] UL OCULTO**/
+body aside:nth-of-type(2) form > div > ul{
+    background-color: #F0EBE8;
+    width: 100vw;
+    height: 80vh;
+    padding: 32px 32px 12px 32px;
+    border-radius: 10px 10px 0 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+    transform: translateY(100%);
+    transition: 0.5s ease-out;
+    z-index: 1;
+}
+
+/**ASIDE RESERVA FORM > DIV[4] > (DIV Y UL) VISIBLE**/
+body aside:nth-of-type(2) form > div > .HsActivo{
+    transform: translateY(0%);
+}
+
+/**Estas class se aplican atraves del JS para darle estilos a los INPUTS, LABEL y los P tanto para estilizarlos como para las validaciones**/
+
+/**ASIDE RESERVA FORM DIV INPUT CLASS="OUTLINE"**/
+body aside:nth-of-type(2) form div .outLine{
+    padding-bottom: 9px;
+    border-bottom: 2px solid #baa472;
+}
+
+/**ASIDE RESERVA FORM DIV LABEL CLASS="ERRORLABEL"**/
+body aside:nth-of-type(2) form div .errorLabel{
+    color: #F26671;
+}
+
+/**ASIDE RESERVA DIV INPUT CLASS="ERRORINPUT"**/
+body aside:nth-of-type(2) form div .errorInput{
+    border: 1px solid #F26671;
+}
+
+/**ASIDE RESERVA FORM DIV P(MJS ERROR)**/
+body aside:nth-of-type(2) form div p{
+    font-size: .75rem;
     font-weight: 500;
+    color: #F26671;
+    padding-bottom: 0;
+    padding-left: 18px;
+    background: url(../img/iconos/elerta.png) no-repeat;
+    background-size: 12px;
+    background-position: 0 2px;
+}
+
+/**DIV MENSAJE DE RESERVA DE TURNO**/
+body > div > div{
+    max-width: 320px;
+    padding: 2rem 1rem; 
+    background-color: #F0EBE8;
+    border-left: 4px solid #fdd579;
+    border-radius: 10px;
+}
+
+body > div > div p:last-child{
+    font-weight: 500;
+}
+
+body > div > div{
+    position: relative;
+}
+
+/**ICONO CERRAR MODAL MSJ**/
+body > div > div div{
+    width: 24px;
+    height: 24px;
+    background: url(../img/iconos/cerrar.png) no-repeat center center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 3;
+}
+
+body > div{
+    display: none;
+ }
+
+.msjActivo{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #2a2a2af5;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*///////////////MAEDIA QUERIS//////////////*/
 /*Esta MEDIA QUERI sirve para dejar de mostra el boton de SCROLL que esa en el header*/

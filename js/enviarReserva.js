@@ -20,7 +20,7 @@ function EnviarReserva(e){
         for(let hs of Horarios){
             if(hs.hora == horario.value){
                 //hs.reservado = true;
-                Horarios.splice(h4.innerHTML, 1)
+                Horarios.splice(horario.value, 1)
             }
         }
 
