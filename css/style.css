@@ -176,6 +176,11 @@ header > ul li a{
     color: #baa472;
 }
 
+header > ul li a{
+    max-width: 88px;
+    margin: auto;
+    border-bottom: 1px solid #baa472;
+}
 
 /*///////////////SOBRE NOSOTROS//////////////*/
 body section:nth-of-type(1){
@@ -374,7 +379,7 @@ body aside:nth-of-type(1) div ul li:last-child span{
 body aside:nth-of-type(1) div ul li a{
     color: #f2f2f2;
     font-weight: 400;
-    border-bottom: 1px solid #6666664d;;
+    border-bottom: 1px solid #f2f2f2;
 }
 
 /*///////////////RESERVAR TURNO//////////////*/
@@ -404,6 +409,11 @@ body aside:nth-of-type(2) > div > ul li{
 body aside:nth-of-type(2) > div > ul li a{
     display: inline;
     color: #333;
+}
+
+/**ASIDE RESERVA UL LI A SPAN**/
+body aside:nth-of-type(2) > div > ul li a span{
+    border-bottom: 1px solid #333;
 }
 
 /**ASIDE RESERVA FORM DIV**/
@@ -600,7 +610,6 @@ body > div{
 
 
 /*///////////////FOOTER//////////////*/
-
 footer{
     padding: 2rem 1rem;
     background-color: #2A2A2A;
