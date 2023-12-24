@@ -145,7 +145,7 @@ footer > div div p{
 
 /**ESTILOS DEL BOTON RESERVAR TURNO**/
 header button{
-    width: 160px;
+    width: 250px;
     display: block;
     color: #f2f2f2;
     font-size: .875rem;
@@ -155,7 +155,7 @@ header button{
     border-radius: 10px;
     margin: auto;
     margin-top: 114px;
-    padding: 3px 0 4px 0;
+    padding: 9px;
     /*.875rem = 14px*/
 }
 
@@ -166,7 +166,7 @@ header > ul{
 }
 
 header > ul li{
-    padding-bottom: 1rem;
+    padding-bottom: .625rem;
 }
 
 header > ul li, 
@@ -351,8 +351,8 @@ body aside:nth-of-type(1) div ul li span{
     border: 1px solid #BAA472;
     border-radius: 50%;
 }
-/**(UBICACION)**/
 
+/**(UBICACION)**/
 body aside:nth-of-type(1) div ul li:first-child span{
     background: url(../img/iconos/ubicacion.png) no-repeat center center;
     background-size: 14px;
@@ -379,7 +379,7 @@ body aside:nth-of-type(1) div ul li a{
 
 /*///////////////RESERVAR TURNO//////////////*/
 body aside:nth-of-type(2){
-    margin: 0 1rem;
+    margin: 80px 1rem;
 }
 /**ASIDE RESERVA H2**/
 body aside:nth-of-type(2) h2{
@@ -396,7 +396,7 @@ body aside:nth-of-type(2) > div{
 
 /**ASIDE RESERVA UL LI**/
 body aside:nth-of-type(2) > div > ul li{
-    margin-top: 1rem;
+    margin-top: .625rem;
     line-height: 1.4rem;
 }
 
@@ -466,7 +466,7 @@ body aside:nth-of-type(2) form div h4 span{
 /**ASIDE RESERVA FORM > DIV[4] > UL LI**/
 body aside:nth-of-type(2) form > div > ul li{
     width: 100%;
-    max-width: 436px;
+    max-width: 500px;
     margin: auto;
     margin-bottom: 16px;
     padding: 9px 10px; 
@@ -478,13 +478,10 @@ body aside:nth-of-type(2) form > div > ul li{
     font-size: .875rem;
     display: flex;
     align-items: center;
+    flex-direction: row-reverse;
     justify-content: center;
 }
 
-body aside:nth-of-type(2) form > div > ul li{
-    display: flex;
-    flex-direction: row-reverse;
-}
 
 body aside:nth-of-type(2) form > div > ul li span{
     width: 18px;
@@ -512,7 +509,7 @@ body aside:nth-of-type(2) form > div > ul{
     background-color: #F0EBE8;
     width: 100vw;
     height: 80vh;
-    padding: 32px 32px 12px 32px;
+    padding: 2rem 1rem 1rem 1rem;
     border-radius: 10px 10px 0 0;
     position: fixed;
     bottom: 0;
@@ -554,8 +551,8 @@ body aside:nth-of-type(2) form div p{
     padding-bottom: 0;
     padding-left: 18px;
     background: url(../img/iconos/elerta.png) no-repeat;
-    background-size: 12px;
-    background-position: 0 2px;
+    background-size: 13px;
+    background-position: 0 1px;
 }
 
 /**DIV MENSAJE DE RESERVA DE TURNO**/
@@ -602,6 +599,76 @@ body > div{
 }
 
 
+/*///////////////FOOTER//////////////*/
+
+footer{
+    padding: 2rem 1rem;
+    background-color: #2A2A2A;
+}
+
+/**FOOTER H2 LOGO**/
+footer h2{
+    margin: auto;
+}
+
+/**FOOTER DIV P**/
+footer > div div p{
+    max-width: 150px;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+}
+
+/**FOOTER DIV UL**/
+footer > div div ul{
+    display: flex;
+    justify-content: center;
+}
+
+/**FOOTER DID UL LI A**/
+footer > div div ul li a{
+    width: 14px;
+    height: 14px;
+    margin-right: 1rem;
+    padding: 12px;
+    border: 1px solid #BAA472;
+    border-radius: 50%;
+    font-size: 0;
+}
+
+/**FOOTER DID UL LI A(FACEBOOK)**/
+footer > div div ul li:first-child a{
+    background: url(../img/iconos/facebook.png) no-repeat center center;
+    background-size: 14px;
+}
+
+/**FOOTER DID UL LI A(INSTAGRAM)**/
+footer > div div ul li:nth-of-type(2) a{
+    background: url(../img/iconos/instagram.png) no-repeat center center;
+    background-size: 14px;
+}
+/**FOOTER DID UL LI A(WHATSAPP)**/
+footer > div div ul li:last-child a{
+    background: url(../img/iconos/whatsapp_f.png) no-repeat center center;
+    background-size: 14px;
+}
+
+/**FOOTER DID UL LI P(COPYRIGHT)**/
+footer > div div + p{
+    font-size: .875rem;
+    font-weight: 600;
+    padding: 0 0 0 20px;
+    background: url(../img/iconos/copyright.png) no-repeat;
+    background-size: 16px;
+    background-position: 0 1px;
+    color: #666;
+}
+
+/**FOOTER DID UL LI P(SPAN)**/
+footer > div div + p span{
+    color: #666;
+}
 
 
 
