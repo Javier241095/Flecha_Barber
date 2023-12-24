@@ -763,6 +763,11 @@ footer > div div + p span{
 }
 
 @media screen and (min-width: 600px){
+    /**ICONO HAMBURGUESA**/
+    header > div:nth-of-type(1) nav > div{
+        right: 2rem !important;
+    }
+
     /**HEADER > DIV**/
     header > div{
         padding: 1rem 2rem 0 2rem;
@@ -770,13 +775,17 @@ footer > div div + p span{
 
     /*///////////////SOBRE NOSOTROS//////////////*/
     body section:nth-of-type(1){
-        padding: 0 2rem;
+        max-width: 500px;
+        margin: 80px auto;
+        padding: 0;
     }
 
     /*///////////////NUESTROS SERVICIOS//////////////*/
     /**SECTION[2] FIGURE FIGCAPTION**/
     body section:nth-of-type(2) figure figcaption div{
-        padding: 32px;
+        max-width: 500px;
+        margin: auto;
+        padding: 32px 0;
     }
 
     /*///////////////GALERIA//////////////*/
@@ -791,6 +800,13 @@ footer > div div + p span{
     /**ESTILO DE LA ULTIMA IMG CENTRADA AL MEDIO**/
     body section:nth-of-type(3) > div:nth-of-type(1) figure:nth-of-type(5){
         max-width: 250px;
+    }
+
+    /*///////////////CONTACTO//////////////*/
+    /**ASIDE CONTACTO DIV**/
+    body aside:nth-of-type(1) div{
+        background-color: #2A2A2A;
+        padding: 32px;
     }
 
     /*///////////////FOOTER//////////////*/
@@ -820,8 +836,6 @@ footer > div div + p span{
         margin-top: 5px;
     }
 }
-
-
 
 /*Esta MEDIA QUERI sirve para dejar de mostra el boton de SCROLL que esta en el header cuando el ancho del navegador es mayor a 799px*/
 @media screen and (max-width: 799px){
@@ -902,7 +916,6 @@ footer > div div + p span{
         }
     }
 }
-
 
 /*************************************/
 @media screen and (max-width: 979px){
