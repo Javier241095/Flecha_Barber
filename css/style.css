@@ -755,90 +755,15 @@ footer > div div + p span{
     }
 
     /**ESTILOS DEL BOTON RESERVAR TURNO**/
-    header button, section button, aside input[type="submit"]{
+    section button, aside input[type="submit"]{
         max-width: 250px;
         margin: auto;
         margin-top: 50px;
     }
 }
 
-@media screen and (min-width: 600px){
-    /**ICONO HAMBURGUESA**/
-    header > div:nth-of-type(1) nav > div{
-        right: 2rem !important;
-    }
-
-    /**HEADER > DIV**/
-    header > div{
-        padding: 1rem 2rem 0 2rem;
-    }
-
-    /*///////////////SOBRE NOSOTROS//////////////*/
-    body section:nth-of-type(1){
-        max-width: 500px;
-        margin: 80px auto;
-        padding: 0;
-    }
-
-    /*///////////////NUESTROS SERVICIOS//////////////*/
-    /**SECTION[2] FIGURE FIGCAPTION**/
-    body section:nth-of-type(2) figure figcaption div{
-        max-width: 500px;
-        margin: auto;
-        padding: 32px 0;
-    }
-
-    /*///////////////GALERIA//////////////*/
-    /**ESTILO DE LAS IMG MINIATURA**/
-    body section:nth-of-type(3) > div:nth-of-type(1){
-        display: grid;
-        grid-template-columns: repeat(2, 250px);
-        justify-content: center;
-        grid-gap: 10px 16px;
-    }
-
-    /**ESTILO DE LA ULTIMA IMG CENTRADA AL MEDIO**/
-    body section:nth-of-type(3) > div:nth-of-type(1) figure:nth-of-type(5){
-        max-width: 250px;
-    }
-
-    /*///////////////CONTACTO//////////////*/
-    /**ASIDE CONTACTO DIV**/
-    body aside:nth-of-type(1) div{
-        background-color: #2A2A2A;
-        padding: 32px;
-    }
-
-    /*///////////////FOOTER//////////////*/
-    footer{
-        padding: 2rem;
-    }
-
-    /**FOOTER > DIV**/
-    footer > div{
-        display: grid;
-        grid-template-columns: 160px 160px 100px;
-        justify-content: space-between;
-    }
-
-    /**FOOTER H2 LOGO**/
-    footer h2{
-        margin: 0;
-    }
-
-    /**FOOTER DIV P**/
-    footer > div div p{
-        margin: 0 0 1rem 0;
-    }
-
-    /**FOOTER DID UL LI P(COPYRIGHT)**/
-    footer > div div + p{
-        margin-top: 5px;
-    }
-}
-
-/*Esta MEDIA QUERI sirve para dejar de mostra el boton de SCROLL que esta en el header cuando el ancho del navegador es mayor a 799px*/
-@media screen and (max-width: 799px){
+/*Esta MEDIA QUERI sirve para dejar de mostra el boton de SCROLL que esta en el header cuando el ancho del navegador es mayor a 599px*/
+@media screen and (max-width: 599px){
     /**ESTILOS DEL INDICADOR DE SCROLL**/
     .animation{
         transform: translateX(-100vh);
@@ -916,8 +841,121 @@ footer > div div + p span{
         }
     }
 }
-
 /*************************************/
+
+@media screen and (min-width: 600px){
+    /**ICONO HAMBURGUESA**/
+    header > div:nth-of-type(1) nav > div{
+        right: 2rem !important;
+    }
+
+    /**HEADER > DIV**/
+    header > div{
+        padding: 1rem 2rem 0 2rem;
+    }
+
+    /**ESTILOS DEL UL DIA Y HORARIO**/
+    header > ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 218px;
+        text-align: initial;
+        padding: 0 2rem 1rem 2rem;
+    }
+
+    /**HEADER > UL LI**/
+    header > ul li{
+        padding-bottom: 0;
+    }
+
+    /*///////////////SOBRE NOSOTROS//////////////*/
+    body section:nth-of-type(1){
+        max-width: 516px;
+        margin: 80px auto;
+        padding: 0;
+    }
+
+    /*///////////////NUESTROS SERVICIOS//////////////*/
+    /**SECTION[2] FIGURE FIGCAPTION**/
+    body section:nth-of-type(2) figure figcaption div{
+        max-width: 516px;
+        margin: auto;
+        padding: 32px 0;
+    }
+
+    /*///////////////GALERIA//////////////*/
+    /**ESTILO DE LAS IMG MINIATURA**/
+    body section:nth-of-type(3) > div:nth-of-type(1){
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        justify-content: center;
+        grid-gap: 10px 16px;
+    }
+
+    /**ESTILO DE LA ULTIMA IMG CENTRADA AL MEDIO**/
+    body section:nth-of-type(3) > div:nth-of-type(1) figure:nth-of-type(5){
+        max-width: 250px;
+    }
+
+    /*///////////////CONTACTO//////////////*/
+    /**ASIDE CONTACTO DIV**/
+    body aside:nth-of-type(1) div{
+        background-color: #2A2A2A;
+        padding: 32px;
+    }
+
+    /*///////////////FOOTER//////////////*/
+    footer{
+        padding: 2rem;
+    }
+
+    /**FOOTER > DIV**/
+    footer > div{
+        display: grid;
+        grid-template-columns: 160px 160px 100px;
+        justify-content: space-between;
+    }
+
+    /**FOOTER H2 LOGO**/
+    footer h2{
+        margin: 0;
+    }
+
+    /**FOOTER DIV P**/
+    footer > div div p{
+        margin: 0 0 1rem 0;
+    }
+
+    /**FOOTER DID UL LI P(COPYRIGHT)**/
+    footer > div div + p{
+        margin-top: 5px;
+    }
+}
+
+@media screen and (min-width: 801px){
+    /*///////////////HEADER//////////////*/
+    /**IMAGEN DE FONDO**/
+    header{
+        /*Solo se modifico la imagen de fondo y el alto*/
+        max-width: 1300px;
+        height: 550px;
+        margin: auto;
+        background: url(../img/banner/banner_tablet_pc.jpg) no-repeat center center;
+    }
+
+    /**ESTILOS DEL BOTON RESERVAR TURNO**/
+    header button{
+        margin-top: 60px;
+    }
+
+    /**ESTILOS DEL UL DIA Y HORARIO**/
+    header > ul{
+        margin-top: 155px;
+    }
+}
+
+/*Esta MEDIA QUERI sirve para dejar de mostra la navegacion para dispositivos moviles*/
 @media screen and (max-width: 979px){
     /**ICONO HAMBURGUESA**/
     header > div:nth-of-type(1) nav > div{
@@ -977,3 +1015,191 @@ footer > div div + p span{
     }
 }
 /*************************************/
+
+@media screen and (min-width: 980px){
+    /**ICONO CERRAR MENU**/
+    /**ESTILOS DEL BOTON RESERVAR TURNO**/
+    header > div:nth-of-type(1) nav > .menuX, header button{
+        display: none;
+    }
+
+    /*///////////////HEADER//////////////*/
+    /**HEADER > DIV**/
+    header > div{
+        max-width: 916px;
+        margin: auto;
+        padding: 1rem 0 0 0;
+    }
+
+    /**H1 LOGO**/
+    header > div:nth-of-type(1) h1{
+        margin-right: 56px;
+    }
+
+    header > div:first-child{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /**HEADER > DIV NAV UL**/
+    header > div nav ul{
+        display: flex;
+        align-items: center;
+    }
+
+    /**ESTILOS DEL UL LI A**/
+    header > div:nth-of-type(1) nav ul li a{
+        padding: 2px 16px;
+        margin-left: 15px;
+        font-size: .875rem;
+        font-weight: 600;
+    }
+
+    header > div:nth-of-type(1) nav ul li:last-child a{
+        border: 1px solid #BAA472;
+        border-radius: 10px;
+        padding: 2px 16px;
+    }
+
+    /**ESTILOS DEL UL DIA Y HORARIO**/
+    header > ul{
+        max-width: 916px;
+        margin: auto;
+        margin-top: 223px;
+        padding: 0 0 1rem 0;
+    }
+
+    /*///////////////SOBRE NOSOTROS//////////////*/
+    body section:nth-of-type(1),body section:nth-of-type(2){
+        max-width: 1000px;
+        margin: 80px auto;
+        padding: 0;
+    }
+
+    body section:nth-of-type(1) > article{
+        display: grid;
+        grid-template-columns: 332px 472px;
+        align-items: center;
+        grid-gap: 40px;
+        margin: 0 32px;
+    }
+
+    /**FONDO DE COLOR IMG**/
+    body section:nth-of-type(1) figure{
+        max-width: 332px;
+        margin-bottom: 0;
+    }
+
+    /*///////////////NUESTROS SERVICIOS//////////////*/
+    /**SECTION[2] FIGURE**/
+    body section:nth-of-type(2) figure{
+        display: grid;
+        grid-template-columns: 429px 448px;
+        align-items: center;
+        grid-gap: 40px;
+        margin: 0 32px;
+    }
+
+    /**SECTION[2] FIGURE IMG**/
+    body section:nth-of-type(2) figure img{
+        margin: 0;
+        padding: 0;
+    }
+
+    /**SECTION[2] FIGURE FIGCAPTION DIV**/
+    body section:nth-of-type(2) figure figcaption div{
+        padding: 32px;
+    }
+
+    /*///////////////GALERIA//////////////*/
+    /**ESTILO DE LAS IMG MINIATURA**/
+    body section:nth-of-type(3) > div:nth-of-type(1){
+        grid-template-columns: 350px 274px 208px;
+        grid-template-rows: repeat(2, 208px);
+        justify-content: center;
+        position: relative;
+    }
+
+    /**ESTILO DE LA IMG NUMERO 4**/
+    body section:nth-of-type(3) > div:nth-of-type(1) figure:nth-of-type(4){
+        grid-column-start: 2;
+        grid-column-end: 3;
+        max-width: 208px;
+    }
+
+    /**ESTILO DE LA IMG NUMERO 5**/
+    body section:nth-of-type(3) > div:nth-of-type(1) figure:nth-of-type(5){
+        max-width: 274px;
+        width: 274px;
+        position: absolute;
+        bottom: 0;
+        right: -11px;
+    }
+
+    /*///////////////CONTACTO//////////////*/
+    /**ASIDE CONTACTO**/
+    body aside:nth-of-type(1){
+        display: grid;
+        grid-template-columns: 440px 476px;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1064px){
+    /*///////////////HEADER//////////////*/
+    /**HEADER > DIV**/
+    header > div{
+        max-width: 1000px;
+    }
+
+    /**H1 LOGO**/
+    header > div:nth-of-type(1) h1{
+        margin-right: 140px;
+    }
+
+    /**ESTILOS DEL UL DIA Y HORARIO**/
+    header > ul{
+        max-width: 1000px;
+    }
+
+    /*///////////////SOBRE NOSOTROS//////////////*/
+    body section:nth-of-type(1) > article{
+        margin: 0;
+    }
+
+    /*///////////////NUESTROS SERVICIOS//////////////*/
+    /**SECTION[2] FIGURE**/
+    body section:nth-of-type(2) figure{
+        grid-template-columns: 472px 488px;
+        margin: 0;
+    }
+
+    /*///////////////CONTACTO//////////////*/
+    /**ASIDE CONTACTO**/
+    body aside:nth-of-type(1){
+        display: grid;
+        grid-template-columns: repeat(2, 500px);
+        justify-content: center;
+    }
+
+    /*///////////////GALERIA//////////////*/
+    /**ESTILO DE LAS IMG MINIATURA**/
+    body section:nth-of-type(3) > div:nth-of-type(1){
+        grid-template-columns: 410px 350px 208px;
+    }
+
+    /**ESTILO DE LA IMG NUMERO 5**/
+    body section:nth-of-type(3) > div:nth-of-type(1) figure:nth-of-type(5){
+        max-width: 350px;
+        width: 350px;
+        right: 0;
+    }
+
+    /*///////////////FOOTER//////////////*/
+    /**FOOTER > DIV**/
+    footer > div{
+        max-width: 1000px;
+        margin: auto;
+    }
+}
