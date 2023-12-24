@@ -623,9 +623,7 @@ footer h2{
 /**FOOTER DIV P**/
 footer > div div p{
     max-width: 150px;
-    margin: auto;
-    margin-top: 24px;
-    margin-bottom: 1rem;
+    margin: 1rem auto;
     font-size: 1.125rem;
 }
 
@@ -639,7 +637,6 @@ footer > div div ul{
 footer > div div ul li a{
     width: 14px;
     height: 14px;
-    margin-right: 1rem;
     padding: 12px;
     border: 1px solid #BAA472;
     border-radius: 50%;
@@ -650,12 +647,14 @@ footer > div div ul li a{
 footer > div div ul li:first-child a{
     background: url(../img/iconos/facebook.png) no-repeat center center;
     background-size: 14px;
+    margin-right: 1rem;
 }
 
 /**FOOTER DID UL LI A(INSTAGRAM)**/
 footer > div div ul li:nth-of-type(2) a{
     background: url(../img/iconos/instagram.png) no-repeat center center;
     background-size: 14px;
+    margin-right: 1rem;
 }
 /**FOOTER DID UL LI A(WHATSAPP)**/
 footer > div div ul li:last-child a{
@@ -667,6 +666,7 @@ footer > div div ul li:last-child a{
 footer > div div + p{
     font-size: .875rem;
     font-weight: 600;
+    margin-top: 1rem;
     padding: 0 0 0 20px;
     background: url(../img/iconos/copyright.png) no-repeat;
     background-size: 16px;
