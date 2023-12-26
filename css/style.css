@@ -91,6 +91,18 @@ section button, aside input[type="submit"]{
     box-shadow: -2px 3px 6px -2px rgb(0 0 0 / 10%);
 }
 
+section button:hover, aside input[type="submit"]:hover{
+    background-color: #BAA472;
+}
+
+header div nav ul li a:hover{
+    color: #BAA472;
+}
+
+header > div:nth-of-type(1) nav ul li:last-child a:hover{
+    border: 1px solid #BAA472;
+}
+
 /*///////////////HEADER//////////////*/
 /*Esta clase cumple la funcion de restar la barra de scroll cuando el sitio esta abierto desde una PC para evitar el scroll vertical cuando se achica la ventana del navegador. Esto no afecta en dispositivos moviles*/
 .movil{
@@ -285,6 +297,7 @@ body section:nth-of-type(3) > div:nth-of-type(2){
 body section:nth-of-type(3) > div:nth-of-type(2) figure img{
     padding: 10px;
     border: 2px solid #BAA472;
+    border-radius: 10px;
 }
 
 /**ESTILO FIGURE IMG MODAL**/
@@ -1057,7 +1070,7 @@ footer > div div + p span{
     }
 
     header > div:nth-of-type(1) nav ul li:last-child a{
-        border: 1px solid #BAA472;
+        border: 1px solid #81664b;
         border-radius: 10px;
         padding: 2px 16px;
     }
@@ -1066,13 +1079,13 @@ footer > div div + p span{
     header > ul{
         max-width: 916px;
         margin: auto;
-        margin-top: 223px;
+        margin-top: 253px;
         padding: 0 0 1rem 0;
     }
 
     /*///////////////SOBRE NOSOTROS//////////////*/
     body section:nth-of-type(1),body section:nth-of-type(2){
-        max-width: 1000px;
+        max-width: 916px;
         margin: 80px auto;
         padding: 0;
     }
@@ -1082,7 +1095,6 @@ footer > div div + p span{
         grid-template-columns: 332px 472px;
         align-items: center;
         grid-gap: 40px;
-        margin: 0 32px;
     }
 
     /**FONDO DE COLOR IMG**/
@@ -1098,7 +1110,6 @@ footer > div div + p span{
         grid-template-columns: 429px 448px;
         align-items: center;
         grid-gap: 40px;
-        margin: 0 32px;
     }
 
     /**SECTION[2] FIGURE IMG**/
@@ -1115,7 +1126,7 @@ footer > div div + p span{
     /*///////////////GALERIA//////////////*/
     /**ESTILO DE LAS IMG MINIATURA**/
     body section:nth-of-type(3) > div:nth-of-type(1){
-        grid-template-columns: 350px 274px 208px;
+        grid-template-columns: 350px 326px 208px;
         grid-template-rows: repeat(2, 208px);
         justify-content: center;
         position: relative;
@@ -1130,11 +1141,11 @@ footer > div div + p span{
 
     /**ESTILO DE LA IMG NUMERO 5**/
     body section:nth-of-type(3) > div:nth-of-type(1) figure:nth-of-type(5){
-        max-width: 274px;
-        width: 274px;
+        max-width: 326px;
+        width: 326px;
         position: absolute;
         bottom: 0;
-        right: -11px;
+        right: 0;
     }
 
     /*///////////////CONTACTO//////////////*/
@@ -1164,23 +1175,14 @@ footer > div div + p span{
     }
 
     /*///////////////SOBRE NOSOTROS//////////////*/
-    body section:nth-of-type(1) > article{
-        margin: 0;
+    body section:nth-of-type(1),body section:nth-of-type(2){
+        max-width: 1000px;
     }
 
     /*///////////////NUESTROS SERVICIOS//////////////*/
     /**SECTION[2] FIGURE**/
     body section:nth-of-type(2) figure{
         grid-template-columns: 472px 488px;
-        margin: 0;
-    }
-
-    /*///////////////CONTACTO//////////////*/
-    /**ASIDE CONTACTO**/
-    body aside:nth-of-type(1){
-        display: grid;
-        grid-template-columns: repeat(2, 500px);
-        justify-content: center;
     }
 
     /*///////////////GALERIA//////////////*/
@@ -1193,7 +1195,14 @@ footer > div div + p span{
     body section:nth-of-type(3) > div:nth-of-type(1) figure:nth-of-type(5){
         max-width: 350px;
         width: 350px;
-        right: 0;
+    }
+
+    /*///////////////CONTACTO//////////////*/
+    /**ASIDE CONTACTO**/
+    body aside:nth-of-type(1){
+        display: grid;
+        grid-template-columns: repeat(2, 500px);
+        justify-content: center;
     }
 
     /*///////////////FOOTER//////////////*/

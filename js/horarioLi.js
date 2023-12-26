@@ -25,11 +25,13 @@ for(let li of HorariosLi){
 };*/
 
 ul.addEventListener('click', (e)=> {
+    
     if(e.target && e.target.tagName === 'LI'){
         divHs.classList.remove('HsActivo')
         ul.classList.remove('HsActivo')
         body.classList.remove('scrollNull')
         h4.innerHTML = e.target.innerHTML;
         horario.value = e.target.innerText;
-    }    
+    } 
+    
 })
