@@ -1,6 +1,7 @@
 let divHs = d.querySelector('aside form div > div');
 //let HorariosLi = d.querySelectorAll('aside form div ul li');
 let body = d.querySelector("body");
+let id = " ";
 
 h4.addEventListener('click', () => {
     ul.classList.add('HsActivo');
@@ -25,13 +26,17 @@ for(let li of HorariosLi){
 };*/
 
 ul.addEventListener('click', (e)=> {
-    
     if(e.target && e.target.tagName === 'LI'){
         divHs.classList.remove('HsActivo')
         ul.classList.remove('HsActivo')
         body.classList.remove('scrollNull')
         h4.innerHTML = e.target.innerHTML;
         horario.value = e.target.innerText;
-    } 
+        id = e.target.dataset.id
+    }
+
+    console.log(id)
     
+   
 })
+

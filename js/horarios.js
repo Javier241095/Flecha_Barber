@@ -1,32 +1,26 @@
 let Horarios = [
     {
         hora: "10:00",
-        tipo: "am",
         reservado: false,
     },
     {
         hora: "10:30",
-        tipo: "am",
         reservado: false,
     },
     {
         hora: "11:00",
-        tipo: "am",
         reservado: false,
     },
     {
         hora: "11:30",
-        tipo: "am",
         reservado: false,
     },
     {
         hora: "12:00",
-        tipo: "pm",
         reservado: false,
     },
     {
         hora: "12:30",
-        tipo: "pm",
         reservado: false,
     },
     {
@@ -36,32 +30,29 @@ let Horarios = [
     },
     {
         hora: "13:30",
-        tipo: "pm",
         reservado: false,
     },
     {
         hora: "16:00",
-        tipo: "pm",
         reservado: false,
     },
     {
         hora: "16:30",
-        tipo: "pm",
         reservado: false,
     },
     {
         hora: "17:00",
-        tipo: "pm",
         reservado: false,
     },
 ]
 
 if(localStorage.Horarios){
     Horarios = JSON.parse(localStorage.Horarios);
-   /* if(Horarios.length <= 0){
-        horario.disabled = true
-        option.innerHTML = 'No hay horarios disponibles'
-    }*/
+   if(Horarios.length <= 0){
+        localStorage.clear();
+        location.reload();
+        //Esto en realidad esta parte del codigo tendria que mostrar que ya no hay mas hoararios disponibles y no eliminar el almacenamineto local que impide mostrar el msj de reserva exitosa
+    }
 }else{
     localStorage.Horarios = JSON.stringify(Horarios);
 }
@@ -88,6 +79,17 @@ for(let hs of Horarios){
     horario.appendChild(option);
 };*/
 
+for(let i = 0; i < Horarios.length; i++){
+    console.log(i);
+    let li = d.createElement('li');
+    li.innerHTML =  `${Horarios[i].hora}`;
+    li.dataset.id = `${i}`;
+    ul.appendChild(li);
+
+    let span = d.createElement('span');
+    li.appendChild(span)
+}
+/*
 for(let hs of Horarios){
     let li = d.createElement('li');
     li.innerHTML =  `${hs.hora}`;
@@ -95,4 +97,4 @@ for(let hs of Horarios){
 
     let span = d.createElement('span');
     li.appendChild(span)
-}
+}*/

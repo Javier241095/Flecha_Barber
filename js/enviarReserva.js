@@ -20,7 +20,9 @@ function EnviarReserva(e){
         for(let hs of Horarios){
             if(hs.hora == horario.value){
                 //hs.reservado = true;
-                Horarios.splice(4, 1)
+                let n = parseInt(id)
+                Horarios.splice(n, 1)
+                
             }
         }
 
